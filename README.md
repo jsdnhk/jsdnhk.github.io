@@ -7,7 +7,7 @@ GitHub is the code portfolio!
 > Thanks to and Supported by:
 Free and open-source HTML template: 
 Webpage: [OnePageLove-minimal-resume](ogl-resume)
-Author: [Nicolas Meuzard@dribbble](nm@db])
+Author: [Nicolas Meuzard@dribble](nm@db])
 Emoji CSS: 
 Webpage: [Github-emoji-css](gh-emoji)
 Author: [afeld@github](afeld@gh)
