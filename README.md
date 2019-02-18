@@ -1,4 +1,4 @@
-## (On-going) jsdnhk@github profile
+## jsdnhk@github profile - 2019
 
 My footprints: [https://jsdnhk.github.io/](jsdnhk-github)\
 GitHub is the code portfolio!\
