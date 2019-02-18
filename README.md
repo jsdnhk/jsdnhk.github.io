@@ -1,6 +1,6 @@
 ## jsdnhk@github profile - 2019
 
-My footprints: [https://jsdnhk.github.io/](jsdnhk-github)\
+My footprints: [Click here](jsdnhk-github)\
 GitHub is the code portfolio!\
 **Although the world is full of suffering, it is also full of the overcoming of it.——Helen Keller**
 
@@ -12,7 +12,7 @@ GitHub is the code portfolio!\
 > Webpage: [Github-emoji-css](gh-emoji)\
 > Author: [afeld@github](afeld@gh)
 
-[jsdnhk-github]: <https://jsdnhk.github.io/>
+[jsdnhk-github]: <jsdnhk.github.io>
 [ogl-resume]: <https://onepagelove.com/minimal-resume>
 [nm@db]: <https://dribbble.com/NicolasMzrd>
 [gh-emoji]: <https://afeld.github.io/emoji-css/>
