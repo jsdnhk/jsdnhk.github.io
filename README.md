@@ -10,7 +10,7 @@ GitHub is the code portfolio! \
 > Author: [Nicolas Meuzard@dribbble][nm@db] \
 > Emoji CSS: \
 > Webpage: [Github-emoji-css][gh-emoji] \
-> Author: [afeld@github][afeld@gh]
+> Author: [afeld@github][afeld@gh] \
 > Web Counter: \
 > Webpage: [hitwebcounter.com][hitwebcounter]
 
