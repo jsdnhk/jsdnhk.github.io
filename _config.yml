@@ -1,0 +1,32 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: jsdnhk@github profile
+email: dn@jsdnhk.com
+description: >- # this means to ignore newlines until "baseurl:"
+  jsdnhk@github profile - 2019
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jsdnhk.github.io/"
+github_username:  jsdnhk
+
+# Others
+github: [metadata]
+encoding: UTF-8
+kramdown:
+  input: GFM
+  hard_wrap: false
+future: true
+jailed: false
+theme: jekyll-theme-dinky
+gfm_quirks: paragraph_end
+# plugins:
+#  - jekyll-feed
+#  - jekyll-redirect-from
+#  - jekyll-seo-tag
+#  - jekyll-sitemap
+#  - jekyll-avatar
+#  - jemoji
+#  - jekyll-mentions
+#  - jekyll-include-cache
