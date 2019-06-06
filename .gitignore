@@ -1,4 +1,10 @@
 # Jekyll
-_site
+_drafts/
+_site/
+.DS_Store
+*.swp
 .sass-cache
 .jekyll-metadata
+
+# JetBrain
+.idea/
