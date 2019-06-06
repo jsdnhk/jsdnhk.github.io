@@ -16,7 +16,7 @@ theme: "jekyll-theme-midnight"
 
 # build settings
 #exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "node_modules"]
-exclude: ["script", "assets/vendor", "Gemfile", "Gemfile.lock", "Rakefile", "README.md", "package.json"]
+exclude: ["etc", "script", "vendor", "Gemfile", "Gemfile.lock", "Rakefile", "README.md", "package.json", "node_modules"]
 markdown: kramdown
 plugins:
   - jekyll-feed

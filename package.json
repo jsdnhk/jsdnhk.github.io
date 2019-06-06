@@ -1,0 +1,29 @@
+{
+  "name": "jsdnhk.github.io",
+  "version": "1.0.0",
+  "description": "***My footprints***: [https://jsdnhk.github.io/](https://jsdnhk.github.io) \\ Powered by Github page using Jekyll",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsdnhk/jsdnhk.github.io.git"
+  },
+  "author": "DN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsdnhk/jsdnhk.github.io/issues"
+  },
+  "homepage": "https://github.com/jsdnhk/jsdnhk.github.io#readme",
+  "keywords": [
+    "profolio",
+    "blog",
+    "contact"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "underscore": "^1.9.1",
+    "backbone": "^1.4.0"
+  }
+}
