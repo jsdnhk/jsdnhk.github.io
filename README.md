@@ -1,23 +1,22 @@
-## jsdnhk@github profile - 2019
+# jsdnhk@github profile - 2019
 
-My footprints: [https://jsdnhk.github.io/](https://jsdnhk.github.io) \
-Powered by Github Jekyll\
-GitHub is the code portfolio! \
+***My footprints***: [https://jsdnhk.github.io/](https://jsdnhk.github.io) \
+Powered by Github page using Jekyll
+
+
+GitHub is the code portfolio!
+
+
 **Although the world is full of suffering, it is also full of the overcoming of it.——Helen Keller**
 
-> Thanks to and Supported by: \
-> Free and open-source HTML template: \
-> Webpage: [OnePageLove-minimal-resume][ogl-resume] \
-> Author: [Nicolas Meuzard@dribbble][nm@db] \
-> Emoji CSS: \
-> Webpage: [Github-emoji-css][gh-emoji] \
-> Author: [afeld@github][afeld@gh] \
-> Web Counter: \
-> Webpage: [hitwebcounter.com][hitwebcounter]
+#### Thanks to and Supported by:
+
+
+* [OnePageLove-minimal-resume][ogl-resume]
+* [Emoji CSS][gh-emoji]
+* [Web Counter][hitwebcounter]
 
 [jsdnhk-github]: <jsdnhk.github.io>
 [ogl-resume]: <https://onepagelove.com/minimal-resume>
-[nm@db]: <https://dribbble.com/NicolasMzrd>
 [gh-emoji]: <https://afeld.github.io/emoji-css/>
-[afeld@gh]: <https://github.com/afeld>
 [hitwebcounter]: <http://www.hitwebcounter.com>
