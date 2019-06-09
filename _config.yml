@@ -6,13 +6,21 @@
 
 # global settings
 title: "jsdnhk@github profile"
-email: "dn@jsdnhk.com"
 description: "jsdnhk@github profile - 2019"
-url: "https://jsdn.hk/"
+author:
+  name: "dn"
+  email: "dn@jsdnhk.com"
+  url: "https://jsdn.hk"
+baseurl: /
+source: .
+destination: ./_site
+
 github_username: "jsdnhk"
 repository: "jsdnhk/jsdnhk.github.io"
 theme: "jekyll-theme-midnight"
-#analytics_account: "UA-3769691-28" # for google analytics
+google_analytics: "UA-141729733-1" # for google analytics
+owner : "jsdnhk@github"
+year : "2019"
 
 # build settings
 #exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "node_modules"]
