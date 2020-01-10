@@ -64,6 +64,12 @@ div, footer {
 
 
 /*Hero section*/
+.container-hker {
+	background-image: url('/assets/img/bg_hker.jpg') !important;
+	background-size: 1024px !important;
+	width: 1024px !important;
+	height: 1024px !important;
+}
 
 .container {
 	max-width: 1100px;

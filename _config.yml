@@ -6,25 +6,17 @@
 
 # global settings
 title: "jsdnhk@github profile"
+email: "dn@jsdnhk.com"
 description: "jsdnhk@github profile - 2019"
-author:
-  name: "dn"
-  email: "dn@jsdnhk.com"
-  url: "https://jsdn.hk"
-baseurl: /
-source: .
-destination: ./_site
-
+# url: "https://jsdn.hk"
+github: [metadata]
 github_username: "jsdnhk"
 repository: "jsdnhk/jsdnhk.github.io"
 theme: "jekyll-theme-midnight"
-google_analytics: "UA-141729733-1" # for google analytics
-owner : "jsdnhk@github"
-year : "2019"
+analytics_account: "UA-3769691-28" # for google analytics
 
 # build settings
-#exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "node_modules"]
-exclude: ["etc", "script", "vendor", "Gemfile", "Gemfile.lock", "Rakefile", "README.md", "package.json", "node_modules"]
+exclude: ["etc", "scripts", "vendor", "Gemfile", "Gemfile.lock", "Rakefile", "README.md", "package.json", "node_modules"]
 markdown: kramdown
 plugins:
   - jekyll-feed

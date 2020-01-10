@@ -1,16 +1,12 @@
-# jsdnhk@github profile - 2019
+# jsdnhk@github profile - 2020
 
 ***My footprints***: [https://jsdnhk.github.io/](https://jsdnhk.github.io) \
 Powered by Github page using Jekyll
-
-
-GitHub is the code portfolio!
-
+An IT man portfolio
 
 **Although the world is full of suffering, it is also full of the overcoming of it.——Helen Keller**
 
 #### Thanks to and Supported by:
-
 
 * [OnePageLove-minimal-resume][ogl-resume]
 * [Emoji CSS][gh-emoji]
