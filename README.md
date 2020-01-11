@@ -1,6 +1,6 @@
 # jsdnhk@github profile - 2020
 
-***My footprints***: [https://jsdnhk.github.io/](https://jsdnhk.github.io) \
+***My footprints***: [https://jsdn.hk](https://jsdn.hk) \
 Powered by Github page using Jekyll
 An IT man portfolio
 
@@ -12,7 +12,6 @@ An IT man portfolio
 * [Emoji CSS][gh-emoji]
 * [Web Counter][hitwebcounter]
 
-[jsdnhk-github]: <jsdnhk.github.io>
 [ogl-resume]: <https://onepagelove.com/minimal-resume>
 [gh-emoji]: <https://afeld.github.io/emoji-css/>
 [hitwebcounter]: <http://www.hitwebcounter.com>

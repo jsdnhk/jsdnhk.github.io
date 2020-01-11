@@ -5,10 +5,10 @@
 # in the templates via {{ site.myvariable }}.
 
 # global settings
-title: "jsdnhk@github profile"
-email: "dn@jsdnhk.com"
-description: "jsdnhk@github profile - 2019"
-# url: "https://jsdn.hk"
+title: "jsdnhk@github active profile"
+email: "dn@jsdn.hk"
+description: "jsdnhk@github personal site - 2020"
+url: "https://jsdn.hk"
 github: [metadata]
 github_username: "jsdnhk"
 repository: "jsdnhk/jsdnhk.github.io"
