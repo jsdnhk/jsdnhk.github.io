@@ -330,78 +330,80 @@ li .description {
 /* Media queries*/
 
 @media(max-width: 1024px) {
-.container {
-	padding: 15px;
-	margin: 0px auto;
-}
-.cards {
-	margin-top: 250px;
-}
+	.container {
+		padding: 15px;
+		margin: 0px auto;
+	}
+	.cards {
+		margin-top: 250px;
+	}
 }
 
 @media(max-width: 768px) {
-.container {
-	padding: 15px;
-	margin: 0px auto;
-}
-.cards {
-	margin-top: 320px;
-}
-.card {
-	padding: 15px;
-	text-align: left;
-}
-.card h2 {
-	font-size: 70px;
-}
-.card, .sections {
-	width: 100%;
-	height: auto;
-	margin: 10px 0;
-	float: left;
-}
-.timeline {
-	border: none;
-	background-color: rgba(0,0,0,0);
-}
-.timeline li {
-	margin-top: 70px;
-	height: 150px;
-}
+	.container {
+		padding: 15px;
+		margin: 0px auto;
+	}
+	.cards {
+		margin-top: 320px;
+	}
+	.card {
+		padding: 15px;
+		text-align: left;
+	}
+	.card h2 {
+		font-size: 70px;
+	}
+	.card, .sections {
+		width: 100%;
+		height: auto;
+		margin: 10px 0;
+		float: left;
+	}
+	.timeline {
+		border: none;
+		background-color: rgba(0,0,0,0);
+	}
+	.timeline li {
+		margin-top: 70px;
+		height: 150px;
+	}
 }
 
 @media(max-width: 425px) {
-h1.name {
-	font-size: 40px;
-}
-.card, .sections {
-	width: 100%;
-	height: auto;
-	margin: 10px 0;
-	float: left;
-}
-.timeline {
-	display: none;
-}
-.job-title {
-	position: absolute;
-	font-size: 15px;
-	top: -40px;
-	right: 20px;
-	padding: 10px
-}
-.lead {
-	margin-top: 15px;
-	font-size: 20px;
-	line-height: 28px;
-}
-.container {
-	margin: 0px;
-	padding: 0 15px;
-}
-footer {
-	margin-top: 2050px;
-}
+	h1.name {
+		font-size: 40px;
+	}
+	.card, .sections {
+		width: 100%;
+		height: auto;
+		margin: 10px 0;
+		float: left;
+	}
+	.timeline {
+		display: none;
+	}
+	/*
+	.job-title {
+		position: absolute;
+		font-size: 15px;
+		top: -40px;
+		right: 20px;
+		padding: 10px
+	}
+	*/
+	.lead {
+		margin-top: 15px;
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.container {
+		margin: 0px;
+		padding: 0 15px;
+	}
+	footer {
+		margin-top: 2050px;
+	}
 }
 
 
