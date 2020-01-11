@@ -1,8 +1,10 @@
 # jsdnhk@github profile - 2020
 
-***My footprints***: [https://jsdn.hk](https://jsdn.hk) \
+**My footprints**: [https://jsdn.hk](https://jsdn.hk)
+
 Powered by Github page using Jekyll
-An IT man portfolio
+
+Just an IT man portfolio
 
 **Although the world is full of suffering, it is also full of the overcoming of it.——Helen Keller**
 
