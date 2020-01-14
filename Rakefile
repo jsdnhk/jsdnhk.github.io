@@ -96,13 +96,25 @@ task :page do
   end
 end # task :page
 
-desc "Launch preview environment"
-task :preview do
-  system "jekyll serve -w"
-end # task :preview
+desc "Reset bundle install"
+task :reset do
+  system 'sudo bundle clean --force' 
+  system 'sudo bundle install'
+end
+
+desc "Outputs any deprecation or configuration issues"
+task :reset do
+  system 'jekyll doctor' 
+end
 
 desc "Test the webpage in local"
 task :test do
   sh 'bundle exec jekyll build'
   HTMLProofer.check_directory('./_site/', check_html: true).run
 end
+
+desc "Launch preview environment"
+task :preview do
+  system "jekyll serve -w"
+end
+
