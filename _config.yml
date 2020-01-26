@@ -12,6 +12,7 @@ url: "https://jsdn.hk"
 github: [metadata]
 github_username: "jsdnhk"
 repository: "jsdnhk/jsdnhk.github.io"
+# location: /var/lib/gems/2.5.0/gems/jekyll-theme-midnight-0.1.1
 theme: "jekyll-theme-midnight"
 timezone: "Asia/Hong_Kong"
 analytics_account: "UA-3769691-28" # for google analytics

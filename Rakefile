@@ -115,6 +115,7 @@ end
 
 desc "Launch preview environment"
 task :preview do
-  system "jekyll serve -w"
+  host_ip=`hostname -I | awk '{print $1;}'`
+  system "jekyll serve -w --host #{host_ip}"
 end
 
