@@ -1,0 +1,7 @@
+---
+layout: page
+---
+{% comment %}
+change other .md links to generated .html links (used in the .md files which contains .md links)
+{% endcomment %}
+{{ content | replace: '.md', '.html' }}

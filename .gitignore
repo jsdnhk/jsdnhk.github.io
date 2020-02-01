@@ -1,5 +1,6 @@
 # Jekyll
-_drafts/
+collections/_drafts/*.md
+collections/_posts/test/*.md
 _site/
 .DS_Store
 *.swp

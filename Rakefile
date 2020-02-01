@@ -71,7 +71,7 @@ task :post do
   end
 end # task :post
 
-# Usage: rake page name="about.html"
+# Usage: rake page name="resume.html"
 # You can also specify a sub-directory path.
 # If you don't specify a file extention we create an index.html at the path specified
 desc "Create a new page."
@@ -116,6 +116,6 @@ end
 desc "Launch preview environment"
 task :preview do
   host_ip=`hostname -I | awk '{print $1;}'`
-  system "jekyll serve -w --host #{host_ip}"
+  system "jekyll serve -w -l --host #{host_ip} --port 4000"
 end
 

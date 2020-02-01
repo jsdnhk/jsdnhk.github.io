@@ -1,0 +1,5 @@
+<footer class="page-footer">
+{% if page.footer_quote %}
+    <strong><em>{{ page.footer_quote | replace: '---', "&mdash;" }}</em></strong>
+{% endif %}
+</footer>

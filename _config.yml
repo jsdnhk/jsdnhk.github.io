@@ -5,22 +5,37 @@
 # in the templates via {{ site.myvariable }}.
 
 # global settings
-title: "jsdnhk@github active profile"
+title: "jsdn.hk"
 email: "dn@jsdn.hk"
-description: "jsdnhk@github personal site - 2020"
+description: "Simple Note"
+keywords: "about-me, personal-blog, quotes, contacts, geek, main-page, useful-links, hker"
+tagline: "Simple Note"
 url: "https://jsdn.hk"
+language: en
 github: [metadata]
+github_url: "https://github.com/"
 github_username: "jsdnhk"
 repository: "jsdnhk/jsdnhk.github.io"
-# location: /var/lib/gems/2.5.0/gems/jekyll-theme-midnight-0.1.1
-theme: "jekyll-theme-midnight"
 timezone: "Asia/Hong_Kong"
-analytics_account: "UA-3769691-28" # for google analytics
+analytics_account: "UA-3769691-28"
+disqus_shortname: jsdnhk
+
+# not use default theme
+# location: /var/lib/gems/2.5.0/gems/jekyll-theme-midnight-0.1.1
+# theme: "jekyll-theme-midnight"
 
 # build settings
-exclude: ["etc", "scripts", "vendor", "Gemfile", "Gemfile.lock", "Rakefile", "README.md", "package.json", "node_modules"]
+collections_dir: collections
+exclude: ["etc", "scripts", "vendor", "Gemfile*", "package.json*", "Rakefile", "node_modules", ".idea"]
 profile: true
 strict_front_matter: true
+
+# enable GFM
+kramdown:
+  input: GFM
+  hard_wrap: false
+  math_engine_opts:
+    preview: true
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
@@ -30,5 +45,55 @@ plugins:
   - jemoji
   - jekyll-mentions
 
+# default permalink is assigned to the posts
+blog_baseurl: "/blog/"
+permalink: /blog/:year:month:day
+
 # front matter defaults settings
 excerpt_separator: "<!--end-->"
+defaults:
+  # collections
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+      title:
+      title_image:
+      title_display: false
+      footer_quote:
+      sitenav:
+      tags:
+      categories:
+  - scope:
+      path: "*.md"
+      type: "pages"
+    values:
+      layout: page_md
+  # posts
+  - scope:
+      path: "collections/_posts/"
+      type: "posts"
+    values:
+      layout: post
+      display: true
+      comment: false
+  - scope:
+      path: "collections/_posts/test"
+      type: "posts"
+    values:
+      display: false
+  # assets
+  - scope:
+      path: "assets/videos/bg"
+    values:
+      video_bg: true
+
+# Site-scope variables
+path_header_image:
+  h1: "/assets/images/oxygen/48x48/"
+  h2: "/assets/images/oxygen/48x48/"
+  h3: "/assets/images/oxygen/32x32/"
+  h4: "/assets/images/oxygen/32x32/"
+  h5: "/assets/images/oxygen/22x22/"
+  h6: "/assets/images/oxygen/22x22/"
