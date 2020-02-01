@@ -1,0 +1,502 @@
+ /*
+   *                        ___
+   *                       /\_ \
+   *  _____     ___     ___\//\ \      __
+   * /\ '__`\  / __`\  / __`\\ \ \   /'__`\
+   * \ \ \_\ \/\ \_\ \/\ \_\ \\_\ \_/\  __/
+   *  \ \ ,__/\ \____/\ \____//\____\ \____\
+   *   \ \ \/  \/___/  \/___/ \/____/\/____/
+   *    \ \_\
+   *     \/_/
+   *
+   * Designed, built, and released under MIT license by @mdo. Learn more at
+   * https://github.com/poole/poole.
+   */
+
+  /*
+   * Contents
+   *
+   * Body resets
+   * Custom type
+   * Messages
+   * Container
+   * Masthead
+   * Posts and pages
+   * Pagination
+   * Reverse layout
+   * Themes
+   */
+
+  /*
+   * Body resets
+   *
+   * Update the foundational and global aspects of the page.
+   */
+
+@import "vars_base";
+
+* {
+  font-family: $fonts_text;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (min-width: 38em) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+}
+
+.page-container {
+  color: $foreground;
+  background-color: $background;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  min-height: 100%;
+  min-width: max-content;
+}
+
+/* No `:visited` state is required by default (browsers will use `a`) */
+
+a {
+  color: $links;
+  text-decoration: none;
+
+  strong {
+    color: inherit;
+  }
+
+  &:hover, &:focus {
+    color: $badge;
+    text-decoration: underline;
+  }
+}
+
+/* `:focus` is linked to `:hover` for basic accessibility */
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1rem 0;
+  font-weight: bold;
+  line-height: 1.25;
+  color: $selection;
+  text-rendering: optimizeLegibility;
+  font-family: $fonts_header;
+}
+
+h1 {
+  font-size: 2rem;
+
+  img {   // for use of title icon
+    float: left;
+    margin: 0px 20px 0px 0px;   //top right bottom left
+    vertical-align: middle;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+
+  img {   // for use of country flags
+    float: left;
+    height: 2rem;
+    padding: 5px;
+    padding: 5px;
+    margin: 0px 10px 0px 0px;
+    border-radius: 0px;
+    vertical-align: middle;
+  }
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4, h5, h6 {
+  font-size: 1rem;
+}
+
+/* Body text */
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+strong {
+  color: $bold;
+}
+
+/* Lists */
+
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: .5rem;
+}
+
+/* Misc */
+
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid $cursor_text;
+  border-bottom: 1px solid $cursor;
+}
+
+abbr {
+  font-size: 85%;
+  font-weight: bold;
+  color: $cursor_text;
+  text-transform: uppercase;
+
+  &[title] {
+    cursor: help;
+    border-bottom: 1px dotted $cursor_guide;
+  }
+}
+
+/* Code */
+
+code, pre {
+  font-family: $fonts_text;
+}
+
+code {
+  padding: .25em .5em;
+  font-size: 100%;
+  color: $selection;
+  background-color: $selected_text;
+  border-radius: 3px;
+}
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: .7rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: $selected_text;
+
+  code {
+    padding: 0;
+    font-size: 120%;
+    color: $selection;
+    background-color: transparent;
+  }
+}
+
+/* Pygments via Jekyll */
+
+.highlight {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+
+  pre {
+    margin-bottom: 0;
+  }
+}
+
+/* Gist via GitHub Pages */
+
+.gist {
+  .gist-file {
+    font-family: $fonts_text !important;
+  }
+
+  .markdown-body {
+    padding: 15px;
+  }
+
+  pre {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .gist-file .gist-data {
+    font-size: .8rem !important;
+    line-height: 1.4;
+  }
+
+  code {
+    padding: 0;
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}
+
+/* Quotes */
+
+blockquote {
+  padding: .5rem 1rem;
+  margin: .8rem 0;
+  color: $cursor_text;
+  border-left: .25rem solid $cursor_guide;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 30em) {
+  blockquote {
+    padding-right: 5rem;
+    padding-left: 1.25rem;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  border-radius: 5px;
+}
+
+/* Tables */
+
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 2px solid $selection;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: .25rem .5rem;
+  border: 2px solid $selection;
+  color: $selection;
+  background-color: $selected_text;
+}
+
+/*
+ * Custom type
+ *
+ * Extend paragraphs with `.lead` for larger introductory text.
+ */
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: bolder;
+  font-family: $fonts_header;
+}
+
+/*
+ * Messages
+ *
+ * Show alert messages to users. You may add it to single elements like a `<p>`,
+ * or to a parent if there are multiple elements to show.
+ */
+
+.message {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: $selection;
+  background-color: $selected_text;
+}
+
+/*
+ * Container
+ *
+ * Center the page content.
+ */
+
+.container {
+  max-width: 38rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+ * Masthead
+ *
+ * Super small header above the content for site name and short description.
+ */
+
+.masthead {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.masthead-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $cursor_text;
+
+  a {
+    color: $cursor_text;
+  }
+
+  small {
+    font-size: 75%;
+    font-weight: 400;
+    color: $cursor;
+    letter-spacing: 0;
+  }
+}
+
+/*
+ * Posts and pages
+ *
+ * Each post is wrapped in `.post` and is used on default and post layouts. Each
+ * page is wrapped in `.page` and is only used on the page layout.
+ */
+
+.page, .post {
+  margin-bottom: 4em;
+}
+
+/* Blog post or page title */
+
+.page-title {
+  color: $selection;
+}
+
+.post-title {
+  color: $selection;
+
+  a {
+    color: $links;
+  }
+}
+
+.page-title, .post-title {
+  margin-top: 0;
+}
+
+.page-footer {
+  margin: 4rem 0 0 0;
+}
+
+/* Meta data line below post title */
+
+.post-date {
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: $links;
+}
+
+/* Related posts */
+
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid $links;
+}
+
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  li {
+    small {
+      font-size: 75%;
+      color: $cursor_guide;
+    }
+
+    a:hover {
+      color: $badge;
+      text-decoration: none;
+
+      small {
+        color: inherit;
+      }
+    }
+  }
+}
+
+/*
+ * Pagination
+ *
+ * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+ * there are no more previous or next posts to show.
+ */
+
+.pagination {
+  overflow: hidden;
+
+  /* clearfix */
+  margin-left: -1rem;
+  margin-right: -1rem;
+  font-family: $fonts_text;
+  color: $cursor_guide;
+  text-align: center;
+}
+
+/* Pagination items can be `span`s or `a`s */
+
+.pagination-item {
+  display: block;
+  padding: 1rem;
+  border: 1px solid $links;
+
+  &:first-child {
+    margin-bottom: -1px;
+  }
+}
+
+/* Only provide a hover state for linked pagination items */
+
+a.pagination-item:hover {
+  background-color: $badge;
+}
+
+@media (min-width: 30em) {
+  .pagination {
+    margin: 3rem 0;
+  }
+
+  .pagination-item {
+    float: left;
+    width: 50%;
+
+    &:first-child {
+      margin-bottom: 0;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    &:last-child {
+      margin-left: -1px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+}

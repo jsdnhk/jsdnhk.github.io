@@ -1,0 +1,70 @@
+---
+# recommended links to show to the public
+# for pattern aligning, ensure 1) contained http(s) header, 2) '/' char at line-end are removed
+- type: "Cloud Storage"
+  icon: "actions/document-open-remote.png"
+  suggestions:
+    - https://github.com
+    - https://gitlab.com
+    - https://onedrive.live.com
+    - https://www.dropbox.com
+
+- type: "IT Documents"
+  icon: "categories/applications-education-school.png"
+  suggestions:
+    - https://docs.microsoft.com
+    - https://developers.google.com/web
+    - https://access.redhat.com/products
+    - https://developer.ibm.com
+    - https://developer.mozilla.org
+    - https://www.w3schools.com
+    - https://helpx.adobe.com
+    - https://www.digitalocean.com/community
+
+- type: "Open Source Projects"
+  icon: "categories/applications-development-web.png"
+  suggestions:
+    - https://opensource.google
+    - https://opensource.microsoft.com
+    - https://opensource.com
+    - https://www.redhat.com/en
+    - https://redhatofficial.github.io
+    - http://apache.org
+
+- type: "Search For Answer"
+  icon: "categories/system-help.png"
+  suggestions:
+    - https://www.google.com
+    - https://dictionary.cambridge.org
+    - https://www.wikipedia.org
+    - https://wikihow.com
+    - https://stackoverflow.com
+    - https://www.server-world.info/en
+    - https://web.archive.org
+
+- type: "Production Tools"
+  icon: "categories/applications-graphics.png"
+  suggestions:
+    - https://hackmd.io
+    - https://explainshell.com
+    - https://www.draw.io
+    - https://color.adobe.com
+    - https://regexr.com
+    - https://regex101.com
+    - https://css2sass.herokuapp.com
+    - https://app.programmingfonts.org
+
+- type: "Social Media"
+  icon: "categories/applications-multimedia.png"
+  suggestions:
+    - https://yahoo.com
+    - https://www.youtube.com
+    - https://www.linkedin.com
+
+- type: "Free Time"
+  icon: "categories/applications-games.png"
+  suggestions:
+    - https://chess.com
+    - https://thesudoku.com
+    - https://10fastfingers.com
+    - https://leetcode.com

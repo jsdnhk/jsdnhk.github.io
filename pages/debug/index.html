@@ -1,0 +1,27 @@
+---
+layout: json
+title: "Debug"
+description: "Site variables inspection for debug use"
+title_display: false
+permalink: /debug/
+---
+{% comment %}
+Display debug message when in localhost development.
+Can be queried by 1) REST API Client(suggested), 2) Web browser
+{% endcomment %}
+{% if site.url contains "localhost" or site.url contains "127.0.0.1" %}
+{
+    "status": "OK",
+    "message": "Successful loaded.",
+    "site": {{ site | inspect }},
+    "page": {{ page | inspect }},
+    "layout": {{ layout | inspect }},
+    "content": {{ content | inspect }},
+    "paginator": {{ paginator | inspect }}
+}
+{% else %}
+{
+    "status": "Failed",
+    "message": "Debug mode is only available on local development environment."
+}
+{% endif %}

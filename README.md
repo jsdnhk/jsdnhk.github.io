@@ -1,19 +1,17 @@
-# jsdnhk@github profile - 2020
+## jsdn.hk profile - Stand with HK 2020
 
-**My footprints**: [https://jsdn.hk](https://jsdn.hk)
+Welcome to the website of an IT man from Hong Kong.<br>
+The shared technical blog contains my personal opinions, with HKer style.<br>
+The content is being updated regularly,<br>
+and the features will keep improved and extended as well.<br>
+The project is [open source][proj-repo] under the [MIT license][mit-license] with [logs][change-log],<br>
+especially thanks to these [projects][projects-used] to built up this blog.<br>
+Feel free to comment and suggest via [email][email-link] or [issue page][issue-page], thanks and enjoy!<br>
 
-Powered by Github page using Jekyll
 
-Just an IT man portfolio
-
-**Although the world is full of suffering, it is also full of the overcoming of it.——Helen Keller**
-
-#### Thanks to and Supported by:
-
-* [OnePageLove-minimal-resume][ogl-resume]
-* [Emoji CSS][gh-emoji]
-* [Web Counter][hitwebcounter]
-
-[ogl-resume]: <https://onepagelove.com/minimal-resume>
-[gh-emoji]: <https://afeld.github.io/emoji-css/>
-[hitwebcounter]: <http://www.hitwebcounter.com>
+[proj-repo]: <https://github.com/jsdnhk/jsdnhk.github.io>
+[mit-license]: <https://github.com/jsdnhk/jsdnhk.github.io/blob/master/LICENSE>
+[email-link]: <mailto:dn@jsdn.hk>
+[issue-page]: <https://github.com/jsdnhk/jsdnhk.github.io/issues>
+[change-log]: <./CHANGELOG.md>
+[projects-used]: <./PROJECTS_USED.md>
