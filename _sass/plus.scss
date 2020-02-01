@@ -103,6 +103,10 @@ div.grid-video-bg {
 
 /* Screen Adjustment */
 @media all and (max-width: 768px) {
+  .content {
+    width: unset;
+  }
+
   .desktop {
     display: none;
   }
