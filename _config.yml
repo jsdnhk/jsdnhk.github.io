@@ -17,7 +17,7 @@ github_url: "https://github.com/"
 github_username: "jsdnhk"
 repository: "jsdnhk/jsdnhk.github.io"
 timezone: "Asia/Hong_Kong"
-analytics_account: "UA-3769691-28"
+google_analytics_account: "UA-141729733-1"
 disqus_shortname: jsdnhk
 
 # not use default theme

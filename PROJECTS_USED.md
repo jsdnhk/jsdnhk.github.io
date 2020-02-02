@@ -14,6 +14,7 @@ title: "Projects Used"
 
 - [Jekyll](https://jekyllrb.com/): Lightweight but strong blog-aware static web framework published by GitHub
 - [Google Analytics](https://developers.google.com/analytics): Web analytics service by Google
+- [Disqus](https://disqus.com/): American worldwide blog comment hosting service for websites
 - [JQuery](https://jquery.com/): Agile and feature-rich JavaScript library
 - [Underscore.js](https://underscorejs.org/): Enhancement of JavaScript by helper functions
 

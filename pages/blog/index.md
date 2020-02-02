@@ -3,7 +3,7 @@ layout: page
 title: Blog
 title_image: "apps/basket.png"
 title_display: true
-footer_quote: "\"Learn and often review and practice,and is this not very happy?\"---Confucius"
+footer_quote: "\"Learn and often review and practice, and is this not very happy?\"---Confucius"
 permalink: /blog/
 ---
 
