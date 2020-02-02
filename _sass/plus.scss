@@ -65,6 +65,7 @@ div.select-video-bg {
     width: 100%;
     border: 12px;
     font-size: 18px;
+    border-radius: 0.25em;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
     -webkit-appearance: button;
     appearance: button;
@@ -73,7 +74,9 @@ div.select-video-bg {
     option {
       font-family: $fonts_text;
       padding: 30px;
-      background-color: rgba(255, 255, 255, 0.8);
+      // reverted color set
+      color: $background;
+      background-color: $foreground;;
     }
   }
 

@@ -51,7 +51,7 @@
             return;
         }
         // toggle
-        if (!isPlaying()) return false;
+        if (!isPlaying()) return;
         var isBlogMode = $(divPageContainer).css(cssBgColor).search(alphaBlog) != -1;
         var alphaToggle = isBlogMode ? alphaView : alphaBlog;
         var rgbaPageContainer = $(divPageContainer).css(cssBgColor).replace(regexRGBA, alphaToggle);
@@ -88,7 +88,7 @@
         $(selectBG).find('option').each(function(index, element) {
             if (index == targetIndex) {
                 $(selectBG).val(element.value).trigger("change");
-                return false;
+                return false;       // break the foreach loop
             }
         });
     }
