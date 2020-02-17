@@ -1,4 +1,4 @@
-@import "vars_base";
+@import "vars-base";
 
 /* enable hyphenation */
 @mixin hyphens($value: "manual") {
@@ -99,7 +99,7 @@ div.grid-video-bg {
 
     a:hover {
       color: $badge;
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 }

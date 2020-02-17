@@ -89,7 +89,7 @@ defaults:
     values:
       video_bg: true
 
-# Site-scope variables
+# site-scope variables
 path_header_image:
   h1: "/assets/images/oxygen/48x48/"
   h2: "/assets/images/oxygen/48x48/"

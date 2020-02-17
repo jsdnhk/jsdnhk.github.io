@@ -1,12 +1,18 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
+      <script src="/assets/js/sidebar/logo.js"></script>
+      <script src="/assets/js/sidebar/banner.js"></script>
       <h1>
-        <a href="{{ site.baseurl }}/">
-          <img src="/assets/images/jsdn.hk.logo.f@0.33x.jpg" alt="{{ site.title }}"/>
+        <a href="javascript:showAlertLogo();">
+          <img src="/assets/images/jsdn.hk.logo.f@0.33x.jpg" alt="{{ site.title }}" class="hvr-buzz-out"/>
         </a>
       </h1>
-      <p class="lead">{{ site.description }}</p>
+      <p class="lead description">
+        <a href="javascript:onChangeBGColorBody();">
+          {{ site.description }}
+        </a>
+      </p>
       <p class="lead">
         <div class="select-video-bg">
           <select id="select-video-bg">
@@ -18,11 +24,11 @@
           </select>
         </div>
         <div class="grid-video-bg">
-          <div class="grid-item-video-bg"><a href="javascript:reloadVideoBG();"><i class="fa fa-refresh" aria-hidden="true"/></a></div>
-          <div class="grid-item-video-bg"><a href="javascript:toogleSoundVideoBG();"><i class="fa fa-music" aria-hidden="true"/></a></div>
-          <div class="grid-item-video-bg"><a href="javascript:toogleOpacity();"><i class="fa fa-adjust" aria-hidden="true"/></a></div>
-          <div class="grid-item-video-bg"><a href="javascript:shiftVideo(-1);"><i class="fa fa-backward" aria-hidden="true"/></a></div>
-          <div class="grid-item-video-bg"><a href="javascript:shiftVideo(1);"><i class="fa fa-forward" aria-hidden="true"/></a></div>
+          <div class="grid-item-video-bg"><a href="javascript:reloadVideoBG();" class=""><i class="fa fa-refresh hvr-icon" aria-hidden="true"/></a></div>
+          <div class="grid-item-video-bg"><a href="javascript:toogleSoundVideoBG();" class=""><i class="fa fa-music hvr-icon" aria-hidden="true"/></a></div>
+          <div class="grid-item-video-bg"><a href="javascript:toogleOpacity();" class=""><i class="fa fa-adjust hvr-icon" aria-hidden="true"/></a></div>
+          <div class="grid-item-video-bg"><a href="javascript:shiftVideo(-1);" class=""><i class="fa fa-backward hvr-icon" aria-hidden="true"/></a></div>
+          <div class="grid-item-video-bg"><a href="javascript:shiftVideo(1);" class=""><i class="fa fa-forward hvr-icon" aria-hidden="true"/></a></div>
         </div>
       <p>
     </div>
@@ -43,7 +49,10 @@
       {% endfor %}
 
       <!-- foreign links -->
-      <!--<a class="sidebar-nav-item" href="url_1">External_1</a>-->
+      <a class="sidebar-nav-item hvr-icon-grow" href="https://chp-dashboard.geodata.gov.hk/nia/en.html">
+        <i class="fa fa-medkit hvr-icon" aria-hidden="true"/>
+        COVID-19@HK
+      </a>
 
       <!--
       <a class="sidebar-nav-item" href="{{ site.github_url }}/{{ site.github_username }}">
@@ -51,12 +60,12 @@
         {{ site.github_username | prepend: '@' }}
       </a>
       -->
-      <a class="sidebar-nav-item" href="mailto:{{ site.email }}?Subject=A message from jsdn.hk friends (Direct Message)">
-        <i class="fa fa-paper-plane" aria-hidden="true"/>
+      <a class="sidebar-nav-item hvr-icon-grow" href="mailto:{{ site.email }}?Subject=A message from jsdn.hk friends (Direct Message)">
+        <i class="fa fa-paper-plane hvr-icon" aria-hidden="true"/>
         {{ site.email }}
       </a>
-      <a class="sidebar-nav-item" href="/feed.xml">
-        <i class="fa fa-rss-square" aria-hidden="true"/>
+      <a class="sidebar-nav-item hvr-icon-grow" href="/feed.xml">
+        <i class="fa fa-rss-square hvr-icon" aria-hidden="true"/>
         {{ site.title }}
       </a>
     </nav>
