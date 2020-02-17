@@ -33,7 +33,7 @@
    * Update the foundational and global aspects of the page.
    */
 
-@import "vars_base";
+@import "vars-base";
 
 * {
   font-family: $fonts_text;
@@ -60,6 +60,7 @@ html {
 }
 
 body {
+  // background-color: white;   // set by the js switch (banner)
 }
 
 .page-container {

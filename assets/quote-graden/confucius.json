@@ -1,0 +1,700 @@
+{
+   "count" : 139,
+   "results" : [
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c87f5",
+         "quoteText" : "Study the past, if you would divine the future."
+      },
+      {
+         "_id" : "5d91b45d9980192a317c8894",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "The more you know yourself, the more you forgive yourself."
+      },
+      {
+         "quoteText" : "Silence is a true friend who never betrays.",
+         "_id" : "5d91b45d9980192a317c8873",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteText" : "The more you know yourself, the more you forgive yourself.",
+         "_id" : "5d91b45d9980192a317c88c1",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8882",
+         "quoteText" : "Wherever you go, go with all your heart."
+      },
+      {
+         "quoteText" : "The cautious seldom err.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c892c"
+      },
+      {
+         "quoteText" : "It does not matter how slowly you go as long as you do not stop.",
+         "_id" : "5d91b45d9980192a317c89ee",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c89f9",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "To study and not think is a waste. To think and not study is dangerous."
+      },
+      {
+         "_id" : "5d91b45d9980192a317c8a43",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "Choose a job you love, and you will never have to work a day in your life."
+      },
+      {
+         "quoteText" : "I will not be concerned at other men is not knowing me; I will be concerned at my own want of ability.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8a16"
+      },
+      {
+         "quoteText" : "What you do not want done to yourself, do not do to others.",
+         "_id" : "5d91b45d9980192a317c89af",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c8ae9",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "When it is obvious that the goals cannot be reached, don't adjust the goals, adjust the action steps."
+      },
+      {
+         "quoteText" : "Wherever you go, go with all your heart.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8904"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c8ac2",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "Being in humaneness is good. If we select other goodness and thus are far apart from humaneness, how can we be the wise?"
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8acd",
+         "quoteText" : "When it is obvious that the goals cannot be reached, don't adjust the goals, adjust the action steps."
+      },
+      {
+         "quoteText" : "Reviewing what you have learned and learning anew, you are fit to be a teacher.",
+         "_id" : "5d91b45d9980192a317c8993",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8b0e",
+         "quoteText" : "I am not bothered by the fact that I am unknown. I am bothered when I do not know others."
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c89ad",
+         "quoteText" : "Reviewing what you have learned and learning anew, you are fit to be a teacher."
+      },
+      {
+         "_id" : "5d91b45d9980192a317c89c6",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "The superior man is satisfied and composed; the mean man is always full of distress."
+      },
+      {
+         "quoteText" : "To be wrong is nothing unless you continue to remember it.",
+         "_id" : "5d91b45d9980192a317c891c",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c8a71",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "When you see a man of worth, think of how you may emulate him. When you see one who is unworthy, examine yourself."
+      },
+      {
+         "_id" : "5d91b45d9980192a317c8987",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "What you do not want done to yourself, do not do to others."
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8b01",
+         "quoteText" : "I am not bothered by the fact that I am unknown. I am bothered when I do not know others."
+      },
+      {
+         "quoteText" : "The more you know yourself, the more you forgive yourself.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c88fd"
+      },
+      {
+         "quoteText" : "Wherever you go, go with all your heart.",
+         "_id" : "5d91b45d9980192a317c88f2",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteText" : "Being in humaneness is good. If we select other goodness and thus are far apart from humaneness, how can we be the wise?",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8b2c"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c8b86",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "When it is obvious that the goals cannot be reached, don't adjust the goals, adjust the action steps."
+      },
+      {
+         "quoteText" : "I will not be concerned at other men is not knowing me; I will be concerned at my own want of ability.",
+         "_id" : "5d91b45d9980192a317c8bc8",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteText" : "The superior man is modest in his speech, but exceeds in his actions.",
+         "_id" : "5d91b45d9980192a317c8c21",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c8c91",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "They must often change, who would be constant in happiness or wisdom."
+      },
+      {
+         "quoteText" : "When you see a good person, think of becoming like him. When you see someone not so good, reflect on your own weak points.",
+         "_id" : "5d91b45d9980192a317c8d75",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c8c12",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "What you do not want done to yourself, do not do to others."
+      },
+      {
+         "_id" : "5d91b45d9980192a317c8efc",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "Silence is a true friend who never betrays."
+      },
+      {
+         "quoteText" : "Being in humaneness is good. If we select other goodness and thus are far apart from humaneness, how can we be the wise?",
+         "_id" : "5d91b45d9980192a317c8ca1",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteText" : "I want you to be everything that's you, deep at the center of your being.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8ebd"
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8f59",
+         "quoteText" : "The cautious seldom err."
+      },
+      {
+         "quoteText" : "The superior man is modest in his speech, but exceeds in his actions.",
+         "_id" : "5d91b45d9980192a317c8f5d",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteText" : "To be wronged is nothing unless you continue to remember it.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8c30"
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8d76",
+         "quoteText" : "When you see a man of worth, think of how you may emulate him. When you see one who is unworthy, examine yourself."
+      },
+      {
+         "_id" : "5d91b45d9980192a317c8ddf",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "The cautious seldom err."
+      },
+      {
+         "quoteText" : "Silence is the true friend that never betrays.",
+         "_id" : "5d91b45d9980192a317c8dc5",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8c29",
+         "quoteText" : "Silence is the true friend that never betrays."
+      },
+      {
+         "quoteText" : "The more you know yourself, the more you forgive yourself.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8c0b"
+      },
+      {
+         "quoteText" : "They must often change, who would be constant in happiness or wisdom.",
+         "_id" : "5d91b45d9980192a317c8c6d",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteText" : "When you see a man of worth, think of how you may emulate him. When you see one who is unworthy, examine yourself.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8d66"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c8d83",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "When you meet someone better than yourself, turn your thoughts to becoming his equal. When you meet someone not as good as you are, look within and examine your own self."
+      },
+      {
+         "quoteText" : "To be wronged is nothing unless you continue to remember it.",
+         "_id" : "5d91b45d9980192a317c8f03",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteText" : "To be wrong is nothing unless you continue to remember it.",
+         "_id" : "5d91b45d9980192a317c8f3c",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c8f3f",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "The Superior Man is aware of Righteousness, the inferior man is aware of advantage."
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8da5",
+         "quoteText" : "When you meet someone better than yourself, turn your thoughts to becoming his equal. When you meet someone not as good as you are, look within and examine your own self."
+      },
+      {
+         "quoteText" : "Everything has beauty, but not everyone sees it.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8e11"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c8f24",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "Wherever you go, go with all your heart."
+      },
+      {
+         "quoteText" : "Reviewing what you have learned and learning anew, you are fit to be a teacher.",
+         "_id" : "5d91b45d9980192a317c8ee3",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteText" : "The superior man is satisfied and composed; the mean man is always full of distress.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8f67"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c8c78",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "The superior man is modest in his speech, but exceeds in his actions."
+      },
+      {
+         "quoteText" : "The more you know yourself, the more you forgive yourself.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8c2e"
+      },
+      {
+         "quoteText" : "To be wronged is nothing unless you continue to remember it.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c8f28"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c8fb6",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "They must often change, who would be constant in happiness or wisdom."
+      },
+      {
+         "quoteText" : "Fine words and an insinuating appearance are seldom associated with true virtue",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c9058"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c903e",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "To be wronged is nothing unless you continue to remember it."
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c906a",
+         "quoteText" : "What you do not want done to yourself, do not do to others."
+      },
+      {
+         "quoteText" : "I hear and I forget. I see and I remember. I do and I understand.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c937e"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c9169",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "I want you to be everything that's you, deep at the center of your being."
+      },
+      {
+         "quoteText" : "To study and not think is a waste. To think and not study is dangerous.",
+         "_id" : "5d91b45d9980192a317c9171",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c9216",
+         "quoteText" : "The superior man acts before he speaks, and afterwards speaks according to his action."
+      },
+      {
+         "_id" : "5d91b45d9980192a317c9092",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "I want you to be everything that's you, deep at the center of your being."
+      },
+      {
+         "quoteText" : "Our greatest glory is not in never falling, but in rising every time we fall.",
+         "_id" : "5d91b45d9980192a317c9095",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteText" : "I hear and I forget. I see and I remember. I do and I understand.",
+         "_id" : "5d91b45d9980192a317c9144",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c910d",
+         "quoteText" : "I am not bothered by the fact that I am unknown. I am bothered when I do not know others."
+      },
+      {
+         "quoteText" : "Being in humaneness is good. If we select other goodness and thus are far apart from humaneness, how can we be the wise?",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c92b8"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c9200",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "I hear and I forget. I see and I remember. I do and I understand."
+      },
+      {
+         "quoteText" : "It does not matter how slowly you go as long as you do not stop.",
+         "_id" : "5d91b45d9980192a317c90cd",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c919f",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "Ability will never catch up with the demand for it."
+      },
+      {
+         "quoteText" : "If you look into your own heart, and you find nothing wrong there, what is there to worry about? What is there to fear?",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c9356"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c91fa",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "To be wronged is nothing unless you continue to remember it."
+      },
+      {
+         "_id" : "5d91b45d9980192a317c90b7",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "Silence is the true friend that never betrays."
+      },
+      {
+         "quoteText" : "I am not bothered by the fact that I am unknown. I am bothered when I do not know others.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c91d1"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c9313",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "Learning without reflection is a waste, reflection without learning is dangerous."
+      },
+      {
+         "quoteText" : "To be wronged is nothing unless you continue to remember it.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c928e"
+      },
+      {
+         "quoteText" : "They must often change, who would be constant in happiness or wisdom.",
+         "_id" : "5d91b45d9980192a317c93a0",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c93a4",
+         "quoteText" : "Our greatest glory is not in never falling, but in rising every time we fall."
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c9408",
+         "quoteText" : "Wherever you go, go with all your heart."
+      },
+      {
+         "quoteText" : "If you look into your own heart, and you find nothing wrong there, what is there to worry about? What is there to fear?",
+         "_id" : "5d91b45d9980192a317c9477",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c95ba",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "To be wrong is nothing unless you continue to remember it."
+      },
+      {
+         "_id" : "5d91b45d9980192a317c9622",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "What you do not want done to yourself, do not do to others."
+      },
+      {
+         "_id" : "5d91b45d9980192a317c96ef",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "Study the past, if you would divine the future."
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c95b5",
+         "quoteText" : "Fine words and an insinuating appearance are seldom associated with true virtue"
+      },
+      {
+         "quoteText" : "Fine words and an insinuating appearance are seldom associated with true virtue",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c96da"
+      },
+      {
+         "quoteText" : "It does not matter how slowly you go as long as you do not stop.",
+         "_id" : "5d91b45d9980192a317c96f6",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteText" : "Ability will never catch up with the demand for it.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c9742"
+      },
+      {
+         "quoteText" : "The cautious seldom err.",
+         "_id" : "5d91b45d9980192a317c9693",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c96ea",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "When it is obvious that the goals cannot be reached, don't adjust the goals, adjust the action steps."
+      },
+      {
+         "_id" : "5d91b45d9980192a317c9738",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "When it is obvious that the goals cannot be reached, don't adjust the goals, adjust the action steps."
+      },
+      {
+         "_id" : "5d91b45d9980192a317c9735",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "When you see a man of worth, think of how you may emulate him. When you see one who is unworthy, examine yourself."
+      },
+      {
+         "quoteText" : "I will not be concerned at other men is not knowing me; I will be concerned at my own want of ability.",
+         "_id" : "5d91b45d9980192a317c96ac",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteText" : "To give ones self earnestly to the duties due to men, and, while respecting spiritual beings, to keep aloof from them, may be called wisdom.",
+         "_id" : "5d91b45d9980192a317c961a",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteText" : "To study and not think is a waste. To think and not study is dangerous.",
+         "_id" : "5d91b45d9980192a317c956f",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c96df",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "Learning without reflection is a waste, reflection without learning is dangerous."
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c94df",
+         "quoteText" : "Sincerity is the way of Heaven. The attainment of sincerity is the way of men."
+      },
+      {
+         "quoteText" : "It does not matter how slowly you go as long as you do not stop.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c9515"
+      },
+      {
+         "quoteText" : "Our greatest glory is not in never falling, but in rising every time we fall.",
+         "_id" : "5d91b45d9980192a317c954f",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c97b8",
+         "quoteText" : "If you look into your own heart, and you find nothing wrong there, what is there to worry about? What is there to fear?"
+      },
+      {
+         "quoteText" : "To be wrong is nothing unless you continue to remember it.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c97bf"
+      },
+      {
+         "quoteText" : "Learning without reflection is a waste, reflection without learning is dangerous.",
+         "_id" : "5d91b45d9980192a317c9806",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c9820",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "Fine words and an insinuating appearance are seldom associated with true virtue"
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c97e1",
+         "quoteText" : "To be wronged is nothing unless you continue to remember it."
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c987c",
+         "quoteText" : "The superior man is satisfied and composed; the mean man is always full of distress."
+      },
+      {
+         "quoteText" : "I hear and I forget. I see and I remember. I do and I understand.",
+         "_id" : "5d91b45d9980192a317c9982",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c9a2f",
+         "quoteText" : "The superior man is modest in his speech, but exceeds in his actions."
+      },
+      {
+         "quoteText" : "If you look into your own heart, and you find nothing wrong there, what is there to worry about? What is there to fear?",
+         "_id" : "5d91b45d9980192a317c99a7",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteText" : "He who wishes to secure the good of others, has already secured his own.",
+         "_id" : "5d91b45d9980192a317c99b0",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c99f3",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "Sincerity is the way of Heaven. The attainment of sincerity is the way of men."
+      },
+      {
+         "_id" : "5d91b45d9980192a317c9ac7",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "I will not be concerned at other men is not knowing me; I will be concerned at my own want of ability."
+      },
+      {
+         "quoteText" : "I want you to be everything that's you, deep at the center of your being.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c9a68"
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c988c",
+         "quoteText" : "I am not bothered by the fact that I am unknown. I am bothered when I do not know others."
+      },
+      {
+         "quoteText" : "I hear and I forget. I see and I remember. I do and I understand.",
+         "_id" : "5d91b45d9980192a317c9ab2",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c9881",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "When you see a good person, think of becoming like him. When you see someone not so good, reflect on your own weak points."
+      },
+      {
+         "quoteText" : "To give ones self earnestly to the duties due to men, and, while respecting spiritual beings, to keep aloof from them, may be called wisdom.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c99b6"
+      },
+      {
+         "quoteText" : "The cautious seldom err.",
+         "_id" : "5d91b45d9980192a317c9b09",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c98cf",
+         "quoteText" : "Reviewing what you have learned and learning anew, you are fit to be a teacher."
+      },
+      {
+         "quoteText" : "I will not be concerned at other men is not knowing me; I will be concerned at my own want of ability.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c9a31"
+      },
+      {
+         "quoteText" : "The Superior Man is aware of Righteousness, the inferior man is aware of advantage.",
+         "_id" : "5d91b45d9980192a317c9a39",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c9b26",
+         "quoteText" : "Being in humaneness is good. If we select other goodness and thus are far apart from humaneness, how can we be the wise?"
+      },
+      {
+         "quoteText" : "Life is really simple, but we insist on making it complicated.",
+         "_id" : "5d91b45d9980192a317c99c6",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c9a67",
+         "quoteText" : "Ability will never catch up with the demand for it."
+      },
+      {
+         "quoteText" : "The superior man acts before he speaks, and afterwards speaks according to his action.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c9ab0"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c9b82",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "It does not matter how slowly you go as long as you do not stop."
+      },
+      {
+         "_id" : "5d91b45d9980192a317c9ba1",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "The Superior Man is aware of Righteousness, the inferior man is aware of advantage."
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c9ba5",
+         "quoteText" : "When you meet someone better than yourself, turn your thoughts to becoming his equal. When you meet someone not as good as you are, look within and examine your own self."
+      },
+      {
+         "_id" : "5d91b45d9980192a317c9c3d",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "I am not bothered by the fact that I am unknown. I am bothered when I do not know others."
+      },
+      {
+         "quoteText" : "They must often change, who would be constant in happiness or wisdom.",
+         "_id" : "5d91b45d9980192a317c9c12",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteText" : "Choose a job you love, and you will never have to work a day in your life.",
+         "_id" : "5d91b45d9980192a317c9bbd",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c9bdb",
+         "quoteText" : "To study and not think is a waste. To think and not study is dangerous."
+      },
+      {
+         "quoteText" : "The superior man is satisfied and composed; the mean man is always full of distress.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c9bca"
+      },
+      {
+         "quoteText" : "The superior man is modest in his speech, but exceeds in his actions.",
+         "_id" : "5d91b45d9980192a317c9c31",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "_id" : "5d91b45d9980192a317c9c7e",
+         "quoteAuthor" : "Confucius",
+         "quoteText" : "I am not bothered by the fact that I am unknown. I am bothered when I do not know others."
+      },
+      {
+         "quoteText" : "The more you know yourself, the more you forgive yourself.",
+         "_id" : "5d91b45d9980192a317c9cd7",
+         "quoteAuthor" : "Confucius"
+      },
+      {
+         "quoteText" : "When it is obvious that the goals cannot be reached, don't adjust the goals, adjust the action steps.",
+         "quoteAuthor" : "Confucius",
+         "_id" : "5d91b45d9980192a317c9c7f"
+      },
+      {
+         "quoteText" : "To be wronged is nothing unless you continue to remember it.",
+         "_id" : "5d91b45d9980192a317c9c85",
+         "quoteAuthor" : "Confucius"
+      }
+   ]
+}

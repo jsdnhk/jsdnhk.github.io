@@ -9,6 +9,7 @@ title: "Projects Used"
 - [Poole](https://github.com/poole/poole): Clear and concise content renderer
 - [Hyde](https://github.com/poole/hyde): Simple and elgrant two-column style based from Poole
 - [Rouge](https://github.com/rouge-ruby/rouge): Well-known syntax highlighter for GitHub page
+- [Hover.css](http://ianlunn.github.io/Hover/): Completed CSS3 powered hover effects collection
 
 ### Operation
 

@@ -31,7 +31,7 @@
  * Update the foundational and global aspects of the page.
  */
 
-@import "vars_base";
+@import "vars-base";
 
 html {
   font-family: $fonts_text;
@@ -84,19 +84,30 @@ html {
 }
 
 /* About section */
-.sidebar-about h1 {
-  // margin: 1.5rem auto;
-  font-family: $fonts_header;
-  font-size: 3.25rem;
-  text-align: left;
-
-  img {
-    border-radius: 1.5rem;
-    margin: 0px auto;
-    float: none;
+.sidebar-about{
+  h1 {
+    // margin: 1.5rem auto;
+    font-family: $fonts_header;
+    font-size: 3.25rem;
+    text-align: center;
+    color: $selection;
 
     @media (min-width: 48em) {
-      margin: 0px;
+      text-align: left;
+    }
+
+    img {
+      border-radius: 1.5rem;
+      margin: 0px auto;
+      float: none;
+    }
+  }
+
+  .description a {
+    color: $selection;
+    text-decoration: none;
+    &:hover {
+      color: $badge;
     }
   }
 }

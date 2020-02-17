@@ -14,7 +14,7 @@
   suggestions:
     - https://docs.microsoft.com
     - https://developers.google.com/web
-    - https://access.redhat.com/products
+    - https://www.redhat.com/en
     - https://developer.ibm.com
     - https://developer.mozilla.org
     - https://www.w3schools.com
@@ -27,7 +27,6 @@
     - https://opensource.google
     - https://opensource.microsoft.com
     - https://opensource.com
-    - https://www.redhat.com/en
     - https://redhatofficial.github.io
     - http://apache.org
 
@@ -45,6 +44,7 @@
 - type: "Production Tools"
   icon: "categories/applications-graphics.png"
   suggestions:
+    - https://evernote.com
     - https://hackmd.io
     - https://explainshell.com
     - https://www.draw.io
