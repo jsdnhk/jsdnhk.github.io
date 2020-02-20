@@ -1,4 +1,4 @@
-const saints_folder = '/assets/quote-graden';
+const saints_folder = '/assets/saints';
 const saints_json = ['buddha.json', 'confucius.json', 'lao_tzu.json'];
 const title_quote = 'You\'ve got a message:';
 const title_quote_complete = 'Great person, you\'ve reviewed all the quotes in this month!';
@@ -30,9 +30,6 @@ function getQuoteMessage(){
         // text handling
         if (index_select_quote != null) {
             var text_select_quote = json.results[index_select_quote].quoteText.toString().trim();
-            if (!text_select_quote.endsWith('.') && !text_select_quote.endsWith('?')) {
-                text_select_quote = text_select_quote.concat('.');
-            }
             var author_select_quote = json.results[index_select_quote].quoteAuthor.toString().trim();
             quote_message = text_select_quote + '\n\n' + author_select_quote;
         }

@@ -7,10 +7,13 @@ require 'yaml'
 require 'time'
 
 SOURCE = "."
-CONFIG = {
-    'version' => "0.3.0",
+COLLECTIONS = "collections"
+DIRS = {
     'layouts' => File.join(SOURCE, "_layouts"),
-    'posts' => File.join(SOURCE, "_posts"),
+    'scripts' => File.join(SOURCE, "scripts"),
+    'sites' => File.join(SOURCE, "_sites"),
+    'drafts' => File.join(SOURCE, COLLECTIONS, "_drafts"),
+    'posts' => File.join(SOURCE, COLLECTIONS, "_posts"),
     'post_ext' => "md",
 }
 
@@ -39,9 +42,9 @@ module JB
 end #JB
 
 # Usage: rake post title="A Title" [date="2012-02-09"] [tags=[tag1,tag2]] [category="category"]
-desc "Begin a new post in #{CONFIG['posts']}"
+desc "Begin a new post in #{DIRS['posts']}"
 task :post do
-  abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
+  abort("rake aborted: '#{DIRS['posts']}' directory not found.") unless FileTest.directory?(DIRS['posts'])
   title = ENV["title"] || "new-post"
   tags = ENV["tags"] || "[]"
   category = ENV["category"] || ""
@@ -53,7 +56,7 @@ task :post do
     puts "Error - date format must be YYYY-MM-DD, please check you typed it correctly!"
     exit -1
   end
-  filename = File.join(CONFIG['posts'], "#{date}-#{slug}.#{CONFIG['post_ext']}")
+  filename = File.join(DIRS['posts'], "#{date}-#{slug}.#{DIRS['post_ext']}")
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
@@ -109,8 +112,13 @@ end
 
 desc "Test the webpage in local"
 task :test do
-  sh 'bundle exec jekyll build'
-  HTMLProofer.check_directory('./_site/', check_html: true).run
+  system 'bundle exec jekyll build'
+  HTMLProofer.check_directory(DIRS['sites'], check_html: true).run
+end
+
+desc "Update the site data"
+task :update do
+  system "get-pages-latest-date.rb", chdir: DIRS['scripts']
 end
 
 desc "Launch preview environment"

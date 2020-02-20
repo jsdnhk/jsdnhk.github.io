@@ -1,8 +1,110 @@
 ---
-- Look deep into nature, and then you will understand everything better.
-- Try not to become a man of success, but rather try to become a man of value.
-- Life is like riding a bicycle. To keep your balance, you must keep moving.
-- Stay away from negative people, they have a problem for every solution.
-- Weak people revenge. Strong people forgive. Intelligent people ignore.
-- What is right is not always popular, and what is popular is not always right.
-- I speak to everyone in the same way, whether he is the garbage man or the president of the university.
+- group: Religion
+  quotes:
+    - God is subtle but he is not malicious.
+    - God always takes the simplest way.
+    - Coincidence is God’s way of remaining anonymous.
+    - When the solution is simple, God is answering.
+    - Before God we are all equally wise – and equally foolish.
+    - What really interests me is whether God had any choice in the creation of the world.
+    - God does not care about our mathematical difficulties. He integrates empirically.
+    - Morality is of the highest importance – but for us, not for God.
+    - Strenuous intellectual work and looking at God’s nature are the reconciling, fortifying, yet relentlessly strict angels that shall lead me through all of life’s troubles.
+    - True religion is real living; living with all one’s soul, with all one’s goodness and righteousness.
+    - All religions, arts and sciences are branches of the same tree.
+    - Whoever undertakes to set himself up as a judge of truth and knowledge is shipwrecked by the laughter of the gods.
+- group: Nature
+  quotes:
+    - Look deep into nature, and then you will understand everything better.
+    - One must take what nature gives as one finds it.
+    - Joy in looking and comprehending is nature’s most beautiful gift.
+    - Numerous are the wares that nature produces by the dozen, but her choice products are few.
+- group: Peace
+  quotes:
+    - Peace cannot be kept by force. It can only be achieved by understanding.
+    - My pacifism is not based on any intellectual theory but on a deep antipathy to every form of cruelty and hatred.
+    - The goal of pacifism is possible only though a supranational organization. To stand unconditionally for this cause is the criterion of true pacifism.
+    - We must begin to inculcate our children against militarism by educating them in the spirit of pacifism. Our schoolbooks glorify war and conceal it’s horror. I would teach peace rather than war.
+    - Every man has a right over his own life and war destroys lives that were full of promise.
+    - I made one great mistake in my life, when I signed the letter to Franklin D. Roosevelt recommending that atom bombs be made.
+    - The release of atom power has changed everything except our way of thinking… the solution to this problem lies in the heart of mankind. If only I had known, I should have become a watchmaker.
+    - I know not with what weapons World War III will be fought, but World War IV will be fought with sticks and stones.
+- group: Theory
+  quotes:
+    - If you can’t explain it simply, you don’t understand it well enough.
+    - If you can’t explain it to a six year old, you don’t understand it yourself.
+    - Make everything as simple as possible, but not simpler.
+    - Wisdom is not a product of schooling but of the lifelong attempt to acquire it.
+    - The only real valuable thing is intuition.
+    - The intuitive mind is a sacred gift and the rational mind is a faithful servant. We have created a society that honors the servant and has forgotten the gift.
+    - Few are those who see with their own eyes and feel with their own hearts.
+    - Information is not knowledge.
+    - There is no logical way to the discovery of these elemental laws. There is only the way of intuition, which is helped by a feeling for the order lying behind the appearance.
+    - Unthinking respect for authority is the greatest enemy of truth.
+    - It is not so very important for a person to learn facts. For that he does not really need college. He can learn them from books.
+    - If the facts don’t fit the theory, change the facts.
+    - The secret to creativity is knowing how to hide your sources.
+    - Anyone who has never made a mistake has never tried anything new.
+    - Everything that is really great and inspiring is created by the individual who can labor in freedom.
+- group: Life
+  quotes:
+    - I believe in one thing, that only a life lived for others is a life worth living.
+    - Life is like riding a bicycle. To keep your balance, you must keep moving.
+    - If you want to live a happy life, tie it to a goal, not to people or things.
+    - Failure and deprivation are the best educators and purifiers.
+    - Thinking is hard work; that’s why so few do it.
+    - I believe that a simple and unassuming manner of life is best for everyone, best both for the body and the mind.
+    - Nothing will benefit human health and increase chances of survival for life on earth as much as the evolution to a vegetarian diet.
+    - It is my view that the vegetarian manner of living by its purely physical effect on the human temperament would most beneficially influence the lot of mankind.
+    - Be a loner. That gives you time to wonder, to search for the truth. Have holy curiosity. Make your life worth living.
+    - The woman who follows the crowd will usually go no further than the crowd. The woman who walks alone is likely to find herself in places no one has ever been before.
+    - I’m like a run-down old car – something is wrong in every corner. But life is still worthwhile as long as I can still work.
+    - Setting an example is not the main means of influencing another, it is the only means.
+    - If people are good only because they fear punishment, and hope for reward, then we are a sorry lot indeed.
+    - Make a lot of walks to get healthy and don’t read that much but save yourself some until you’re grown up.
+- group: Advice
+  quotes:
+    - Try not to become a man of success, but rather try to become a man of value.
+    - Never do anything against conscience, even if the state demands it.
+    - The best way to cheer yourself is to cheer somebody else up.
+    - Success comes from curiosity, concentration, perseverance and self-criticism.
+    - The example of great and pure individuals in the only thing that can lead us to noble thoughts and deeds.
+    - Only if outward and inner freedom are constantly and consciously pursued is there a possibility of spiritual development and perfection and thus of improving man’s outward and inner life.
+    - The true value of a human being is determined primarily by the measure and the sense in which he has attained liberation from the self.
+    - "Insanity: doing the same thing over and over again and expecting different results."
+    - The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.
+    - What is right is not always popular, and what is popular is not always right.
+    - Only one who devotes himself to a cause with his whole strength and soul can be a true master. For this reason mastery demands all of a person.
+    - That is the way to learn the most, that when you are doing something with such enjoyment that you don’t notice that the time passes.
+    - Reading, after a certain age, diverts the mind too much from its creative pursuits. Any man who reads too much and uses his own brain too little falls into lazy habits of thinking.
+    - "This is quite natural: everybody likes to do that for which he has a talent."
+    - Be creative, but make sure that what you create is not a curse for mankind.
+    - One must shy away from questionable undertakings, even when they bear a high-sounding name.
+- group: Science
+  quotes:
+    - "Why does this magnificent applied science which saves work and makes life easier bring us so little happiness? The simple answer runs: Because we have not yet learned to make sensible use of it."
+    - Our entire much-praised technological progress, and civilization generally, could be compared to an axe in the hand of a pathological criminal.
+    - Concern for man and his fate must always form the chief objective of all technological endeavors… in order that the creations of our minds shall be a blessing and not a curse to mankind. Never forget this in the midst of your diagrams and equations.
+    - In the matter of physics education, the first lessons should contain nothing but what is experimental and interesting to see.
+    - It is the supreme art of the teacher to awaken joy in creative expression and knowledge.
+    - Numerous are the academic chairs, but rare are wise and noble teachers. Numerous and large are the lecture halls, but far from numerous the young people who genuinely thirst for truth and justice.
+- group: Human
+  quotes:
+    - The difference between stupidity and genius is that genius has its limits.
+    - Weak people revenge. Strong people forgive. Intelligent people ignore.
+    - Compassionate people are geniuses in the art of living, more necessary to the dignity, security, and joy of humanity than the discoverers of knowledge.
+    - Without ‘ethical culture’ there is no salvation for humanity.
+    - Ethical axioms are found and tested not very differently from the axioms of science. Truth is what stands the test of experience.
+    - Intellectual growth should commence at birth and cease only at death.
+    - The measure of intelligence is the ability to change.
+    - I must be willing to give up what I am in order to become what I will be.
+    - I am content in my later years. I have kept my good humor and take neither myself nor the next person seriously.
+    - The world is not dangerous because of those who do harm but because of those who look at it without doing anything.
+    - The world is a dangerous place to live, not because of the people who are evil, but because of the people who don’t do anything about it.
+    - "Most people say that it is the intellect which makes a great scientist. They are wrong: it is character."
+    - Any fool can know. The point is to understand.
+    - The only thing more dangerous than ignorance is arrogance.
+    - Sometimes one pays most for the things one gets for nothing.
+    - Stay away from negative people, they have a problem for every solution.
+    - The cult of individuals is always, in my view, unjustified.
+    - I speak to everyone in the same way, whether he is the garbage man or the president of the university.

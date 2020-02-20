@@ -1,9 +1,11 @@
 ---
-- Both knowledge and wisdom extend man's reach. Knowledge led to computers, wisdom to chopsticks.
-- A language that doesn't affect the way you think about programming, is not worth knowing.
-- It is easier to change the specification to fit the program than vice versa.
-- Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.
-- A year spent in artificial intelligence is enough to make one believe in God.
-- Prolonged contact with the computer turns mathematicians into clerks and vice versa.
-- Don't have good ideas if you aren't willing to be responsible for them.
-- You think you know when you learn, are more sure when you can write, even more when you can teach, but certain when you can program.
+- group: Programming
+  quotes:
+    - Both knowledge and wisdom extend man's reach. Knowledge led to computers, wisdom to chopsticks.
+    - A language that doesn't affect the way you think about programming, is not worth knowing.
+    - It is easier to change the specification to fit the program than vice versa.
+    - Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.
+    - A year spent in artificial intelligence is enough to make one believe in God.
+    - Prolonged contact with the computer turns mathematicians into clerks and vice versa.
+    - Don't have good ideas if you aren't willing to be responsible for them.
+    - You think you know when you learn, are more sure when you can write, even more when you can teach, but certain when you can program.

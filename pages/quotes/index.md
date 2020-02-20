@@ -12,14 +12,17 @@ permalink: /quotes/
 ## ![](/assets/images/flags_country/{{ celebrity.place_birth | downcase | strip }}.svg){{ celebrity.name }} ({{ celebrity.date_birth | date: "%d %b, %Y" }} – {{ celebrity.date_gone | date: "%Y" }})
 ### {{ celebrity.titles | join: ', ' }}
 
-{% for quotes_hash in site.data.quotes %}
-{% assign shortname = quotes_hash[0] %}
-{% assign quotes = quotes_hash[1] %}
+{% for groups_hash in site.data.quotes %}
+{% assign shortname = groups_hash[0] %}
+{% assign groups = groups_hash[1] %}
 {% if shortname == celebrity.name_short %}
-{% for quote in quotes %}
+{% for group in groups %}
+#### {{ group.group | capitalize }}
+{% for quote in group.quotes %}
 
 > {{ quote }}
 
+{% endfor %}
 {% endfor %}
 {% endif %}
 {% endfor %}
