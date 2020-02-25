@@ -25,16 +25,21 @@ class UrlsChecker
 
   private
   def checkUrls()
+    threads = []
     @urls.each do |url|
-      furl = UrlsChecker.formattedUrl(url)
-      @urls_changed[url] = furl if !url.eql?(furl)
-      if `curl -Is #{furl} | head -1` =~ /\b[2-3][0-9][0-9]\b/   # lookup http header status contains OK code(200)
-        @urls_valid.push(furl)
-      else
-        @urls_invalid.push(furl)
+      threads << Thread.new do
+        puts "thread [#{url}] started."
+        furl = UrlsChecker.formattedUrl(url)
+        @urls_changed[url] = furl if !url.eql?(furl)
+        if `curl -Is #{furl} | head -1` =~ /\b[2-3][0-9][0-9]\b/
+          @urls_valid.push(furl)
+        else
+          @urls_invalid.push(furl)
+        end
       end
     end
-  end
+    threads.each { |thr| thr.join }
+   end
 
   def getSuffixedFilename(filename, suffix)
     dirname = File.dirname(filename)
@@ -44,7 +49,7 @@ class UrlsChecker
 
   public
   def self.formattedUrl(input_url)
-    return_url = input_url.strip.gsub(/\/+$/, '')
+    return_url = input_url.strip.gsub(/(?=\/?)www\./,'').gsub(/\/+$/, '')
     uri_url = URI(return_url)
     return_url = "https://#{return_url}" if !uri_url.scheme
     return_url
@@ -68,12 +73,12 @@ class Main
     @files.each do |file|
       obj = @objs[file]
       checker = @checkers[file]
-      puts "@checkers[#{file}].urls_changed:"
-      pp checker.urls_changed
       puts "@checkers[#{file}].urls_valid:"
       pp checker.urls_valid
       puts "@checkers[#{file}].urls_invalid:"
       pp checker.urls_invalid
+      puts "@checkers[#{file}].urls_changed:"
+      pp checker.urls_changed
     end
   end
 

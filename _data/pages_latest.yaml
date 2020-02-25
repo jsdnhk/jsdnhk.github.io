@@ -1,11 +1,11 @@
 ---
 - name: blog
-  mtime: '20200224'
+  mtime: '20200225'
 - name: debug
   mtime: '20200202'
 - name: links
   mtime: '20200225'
 - name: quotes
-  mtime: '20200221'
+  mtime: '20200225'
 - name: resume
   mtime: '20200202'

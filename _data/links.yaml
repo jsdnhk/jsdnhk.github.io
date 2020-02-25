@@ -7,19 +7,19 @@
     - https://github.com
     - https://gitlab.com
     - https://onedrive.live.com
-    - https://www.dropbox.com
+    - https://dropbox.com
 
 - type: "IT Documents"
   icon: "categories/applications-education-school.png"
   suggestions:
     - https://docs.microsoft.com
     - https://developers.google.com/web
-    - https://www.redhat.com/en
+    - https://redhat.com/en
     - https://developer.ibm.com
     - https://developer.mozilla.org
-    - https://www.w3schools.com
+    - https://w3schools.com
     - https://helpx.adobe.com
-    - https://www.digitalocean.com/community
+    - https://digitalocean.com/community
 
 - type: "Open Source Projects"
   icon: "categories/applications-development-web.png"
@@ -33,12 +33,12 @@
 - type: "Search For Answer"
   icon: "categories/system-help.png"
   suggestions:
-    - https://www.google.com
+    - https://google.com
     - https://dictionary.cambridge.org
-    - https://www.wikipedia.org
+    - https://wikipedia.org
     - https://wikihow.com
     - https://stackoverflow.com
-    - https://www.server-world.info/en
+    - https://server-world.info/en
     - https://web.archive.org
 
 - type: "Production Tools"
@@ -48,7 +48,7 @@
     - https://monday.com
     - https://hackmd.io
     - https://explainshell.com
-    - https://www.draw.io
+    - https://draw.io
     - https://color.adobe.com
     - https://regexr.com
     - https://regex101.com
@@ -59,8 +59,8 @@
   icon: "categories/applications-multimedia.png"
   suggestions:
     - https://yahoo.com
-    - https://www.youtube.com
-    - https://www.linkedin.com
+    - https://youtube.com
+    - https://linkedin.com
 
 - type: "Free Time"
   icon: "categories/applications-games.png"

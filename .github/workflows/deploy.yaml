@@ -1,0 +1,22 @@
+---
+# Customized Jekyll deployment workflow (in test phase)
+name: "Deployment"
+on:
+  push:
+    branches:
+      - master
+jobs:
+  pre-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Set up Ruby 2.5'
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.5
+      - name: 'Checkout codes'
+        uses: actions/checkout@v2
+      - name: 'Checkout messages'
+        run: |
+          current_time=$(TZ=Asia/Hong_Kong date)
+          echo "Local Datetime: ${current_time}"
+          echo "Checked out the code."
