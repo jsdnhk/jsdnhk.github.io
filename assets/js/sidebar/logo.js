@@ -9,8 +9,14 @@ const title_weather = 'Current Weather: ';
 const index_selected_json = Number(new Date().getMonth()) % saints_json.length;
 const filepath_selected_json = `${saints_folder}/${saints_json[index_selected_json]}`;
 
+let obj_selected_json = null;
+
 function showAlertLogo() {
-    getQuoteMessage();
+    if (!obj_selected_json) {
+        doAjaxGet(filepath_selected_json).then((json) => {getQuoteMessage(json);});
+    } else {
+        getQuoteMessage();
+    }
 }
 
 function showLogoMessage(quote_message) {
@@ -22,19 +28,16 @@ function showLogoMessage(quote_message) {
     alert(show_message);
 }
 
-function getQuoteMessage(){
+function getQuoteMessage(json){
     var quote_message = '';
-    doAjaxGet(filepath_selected_json).then((json) => {
-        // random index fetch
-        var index_select_quote = getRandomQuoteIndex(json.count);
-        // text handling
-        if (index_select_quote != null) {
-            var text_select_quote = json.results[index_select_quote].quoteText.toString().trim();
-            var author_select_quote = json.results[index_select_quote].quoteAuthor.toString().trim();
-            quote_message = text_select_quote + '\n\n' + author_select_quote;
-        }
-        showLogoMessage(quote_message);
-    });
+    if (json) { obj_selected_json = json; }
+    var index_select_quote = getRandomQuoteIndex(obj_selected_json.count);
+    if (index_select_quote != null) {
+        var text_select_quote = obj_selected_json.results[index_select_quote].quoteText.toString().trim();
+        var author_select_quote = obj_selected_json.results[index_select_quote].quoteAuthor.toString().trim();
+        quote_message = text_select_quote + '\n\n' + author_select_quote;
+    }
+    showLogoMessage(quote_message);
 }
 
 var count_quotes_total = 0;
@@ -60,7 +63,11 @@ function getRandomQuoteIndex(count_total){
 function getPrintedQuoteMessage(quote_message){
     let str_printed = '';
     if(quote_message) {
-        str_printed = `(${count_quotes_total - count_quotes_read}) ${title_quote}`;
+        if (count_quotes_total - count_quotes_read > 0) {
+            str_printed = `(${count_quotes_total - count_quotes_read}) ${title_quote}`;
+        } else {
+            str_printed = `${title_quote}`;
+        }
         str_printed += '\n\n' + quote_message;
     } else {
         str_printed = title_quote_complete;

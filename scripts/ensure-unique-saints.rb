@@ -30,7 +30,7 @@ begin
       end
     end
     next if(!data_results_new || data_results_new.empty?)
-    data = {count: data_results_new.length, results: data_results_new}
+    data = {'count' => data_results_new.length, 'results' => data_results_new}
     File.open(json_file, "w") { |f| f.write(JSON.pretty_generate(data)) }
   end
 rescue

@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-require 'html-proofer'
 require "rubygems"
+require "html-proofer"
 require 'rake'
+
 require 'yaml'
 require 'time'
 
@@ -11,37 +12,31 @@ COLLECTIONS = "collections"
 DIRS = {
     'layouts' => File.join(SOURCE, "_layouts"),
     'scripts' => File.join(SOURCE, "scripts"),
-    'sites' => File.join(SOURCE, "_sites"),
+    'pages' => File.join(SOURCE, "pages"),
+    'site' => File.join(SOURCE, "_site"),
     'drafts' => File.join(SOURCE, COLLECTIONS, "_drafts"),
     'posts' => File.join(SOURCE, COLLECTIONS, "_posts"),
     'post_ext' => "md",
+    'page_ext' => "md"
 }
 
-# Path configuration helper
-module JB
-  class Path
-    SOURCE = "."
-    Paths = {
-        :layouts => "_layouts",
-        :posts => "_posts"
-    }
+def ask(message, valid_options)
+  if valid_options
+    answer = get_stdin("#{message}-->#{valid_options.to_s.gsub(/"/, '').gsub(/, /,'/')} ") while !valid_options.include?(answer)
+  else
+    answer = get_stdin(message)
+  end
+  answer
+end
 
-    def self.base
-      SOURCE
-    end
+def get_stdin(message)
+  print message
+  STDIN.gets.chomp
+end
 
-    # build a path relative to configured path settings.
-    def self.build(path, opts = {})
-      opts[:root] ||= SOURCE
-      path = "#{opts[:root]}/#{Paths[path.to_sym]}/#{opts[:node]}".split("/")
-      path.compact!
-      File.__send__ :join, path
-    end
-
-  end #Path
-end #JB
-
-# Usage: rake post title="A Title" [date="2012-02-09"] [tags=[tag1,tag2]] [category="category"]
+IS_COMMENT_ENABLE = true
+IS_DISPLAY_ENABLE = true
+# Usage: rake post [title="${title}"] [date="YYYY-MM-DD"] [tags=[${tag1},${tag2}...]] [category="${category}"]
 desc "Begin a new post in #{DIRS['posts']}"
 task :post do
   abort("rake aborted: '#{DIRS['posts']}' directory not found.") unless FileTest.directory?(DIRS['posts'])
@@ -49,7 +44,8 @@ task :post do
   tags = ENV["tags"] || "[]"
   category = ENV["category"] || ""
   category = "\"#{category.gsub(/-/,' ')}\"" if !category.empty?
-  slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  # slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  slug = "post"
   begin
     date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
   rescue => e
@@ -58,44 +54,46 @@ task :post do
   end
   filename = File.join(DIRS['posts'], "#{date}-#{slug}.#{DIRS['post_ext']}")
   if File.exist?(filename)
-    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+    abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", %w(y n)) == 'y'
   end
 
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
     post.puts "---"
-    post.puts "layout: post"
-    post.puts "title: \"#{title.gsub(/-/,' ')}\""
-    post.puts 'description: ""'
-    post.puts "category: #{category}"
+    # post.puts "layout: post"
+    post.puts "title: \"#{title.strip}\""
     post.puts "tags: #{tags}"
+    post.puts "category: \"#{category}\""
+    # post.puts "display: #{IS_DISPLAY_ENABLE.to_s}"
+    post.puts "comment: #{IS_COMMENT_ENABLE.to_s}"
     post.puts "---"
-    post.puts "{% include JB/setup %}"
   end
 end # task :post
 
-# Usage: rake page name="resume.html"
-# You can also specify a sub-directory path.
-# If you don't specify a file extention we create an index.html at the path specified
-desc "Create a new page."
+IS_TITLE_DISPLAY = true
+# Usage: rake page title="${pagename}"
+desc "Create a new page folder with index page"
 task :page do
-  name = ENV["name"] || "new-page.md"
-  filename = File.join(SOURCE, "#{name}")
-  filename = File.join(filename, "index.html") if File.extname(filename) == ""
-  title = File.basename(filename, File.extname(filename)).gsub(/[\W\_]/, " ").gsub(/\b\w/){$&.upcase}
+  abort("rake aborted: the page title must be given.") unless ENV["title"] && !ENV["title"].empty?
+  title = ENV["title"].strip
+  dirname = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  filename = File.join(DIRS['pages'], [dirname, "index.#{DIRS['page_ext']}"])
+  # title = File.basename(filename, File.extname(filename)).gsub(/[\W\_]/, " ").gsub(/\b\w/){$&.upcase}
   if File.exist?(filename)
-    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+    abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", %w(y n)) == 'y'
   end
 
   mkdir_p File.dirname(filename)
-  puts "Creating new page: #{filename}"
+  puts "Creating new page folder: #{filename}"
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "layout: page"
     post.puts "title: \"#{title}\""
-    post.puts 'description: ""'
+    post.puts "title_image: \"\""
+    post.puts "title_display: #{IS_TITLE_DISPLAY.to_s}"
+    post.puts "footer_quote: \"\\\"quote\\\"---person\""
+    post.puts "permalink: \"/#{dirname}/\""
     post.puts "---"
-    post.puts "{% include JB/setup %}"
   end
 end # task :page
 
@@ -106,24 +104,39 @@ task :reset do
 end
 
 desc "Outputs any deprecation or configuration issues"
-task :reset do
-  system 'jekyll doctor' 
+task :doctor do
+  system 'bundle exec jekyll doctor'
+end
+
+desc "Perform Ruby programming syntax check"
+task :syncheck do
+  system 'bundle exec rubocop -D -S'
 end
 
 desc "Test the webpage in local"
 task :test do
   system 'bundle exec jekyll build'
-  HTMLProofer.check_directory(DIRS['sites'], check_html: true).run
-end
-
-desc "Update the site data"
-task :update do
-  system "get-pages-latest-date.rb", chdir: DIRS['scripts']
+  HTMLProofer.check_directory(DIRS['site'], check_html: true).run
 end
 
 desc "Launch preview environment"
 task :preview do
-  host_ip=`hostname -I | awk '{print $1;}'`
-  system "jekyll serve -w -l --host #{host_ip} --port 4000"
+  system "bundle exec jekyll serve -w -l --port 4000"
 end
 
+desc "Reload the site info"
+task :reload do
+  system "./get-pages-latest-date.rb", chdir: DIRS['scripts']
+end
+
+desc "Push the current code to the master branch"
+task :cmpush => :reload do
+  abort("rake aborted!") unless ask("Sure to commit all the change to remote?", %w(y n)) == 'y'
+  system "./git-commit-push.sh", chdir: DIRS['scripts']
+end
+
+desc "Push the current code to the master branch"
+task :verpush => :reload do
+  abort("rake aborted!") unless ask("Sure to push the new version to remote?", %w(y n)) == 'y'
+  system "./git-version-push.sh", chdir: DIRS['scripts']
+end
