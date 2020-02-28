@@ -1,0 +1,127 @@
+---
+- group: Security
+  tools:
+    - name: "McAfee Solutions"
+      url: "https://www.mcafee.com/"
+      desc: "Well-known security solutions for cloud, endpoint, and antivirus"
+
+    - name: "Fail2ban"
+      url: "https://www.fail2ban.org/wiki/index.php/Main_Page"
+      desc: "Intrusion prevention software framework by log files lookup"
+
+    - name: "Firewalld"
+      url: "https://github.com/firewalld/firewalld"
+      desc: "Allowed dynamically managed firewall with support for network or firewall zones"
+
+    - name: "WireShark"
+      url: "https://www.wireshark.org"
+      desc: "Well-known free network protocol analyzer"
+
+    - name: "ClamAV"
+      url: "https://www.clamav.net/"
+      desc: "Open-source antivirus engine, widely used in server"
+
+- group: Monitoring
+  tools:
+    - name: "Cockpit"
+      url: "https://cockpit-project.org/"
+      desc: "Web accessible interactive admin interface for servers"
+
+- group: Optimization
+  tools:
+    - name: "CCleaner"
+      url: "https://www.ccleaner.com/"
+      desc: "One of the longest-established system cleaners"
+
+    - name: "Tencent Lemon"
+      url: "https://lemon.qq.com/"
+      desc: "China-made system cleaners with PC monitor"
+
+- group: Data Backup
+  tools:
+    - name: "Restic"
+      url: "https://restic.net/"
+      desc: "Fast, efficient, easy-to-use and secure backup program"
+
+- group: Package Management
+  tools:
+    - name: "Homebrew"
+      url: "https://brew.sh/"
+      desc: "The missing part of macOS or Linux"
+
+    - name: "Cakebrew"
+      url: "http://www.cakebrew.com"
+      desc: "GUI client for Homebrew, that managing apps without command-line"
+
+    - name: "RubyGems"
+      url: "https://rubygems.org/"
+      desc: "Used to interact with 3rd-party Python packages"
+
+    - name: "pip"
+      url: "https://pip.pypa.io/"
+      desc: "A tool designed to easily manage of gems, mean standardized Ruby programs and libraries"
+
+- group: Remote Control
+  tools:
+    - name: "TeamViewer"
+      url: "https://www.teamviewer.com/en/"
+      desc: "Combines remote access and shared meeting features in a direct way"
+
+    - name: "VNC Connect"
+      url: "https://www.realvnc.com/en/connect/"
+      desc: "Simple and secure remote access server/client software"
+
+### Virtualization
+- group: Virtualization
+  tools:
+    - name: "Docker"
+      url: "https://www.docker.com/"
+      desc: "Powerful, performs operating-system-level container virtualization"
+
+    - name: "Podman"
+      url: "https://podman.io/"
+      desc: "New generation of containization form"
+
+    - name: "Vagrant"
+      url: "https://www.vagrantup.com/"
+      desc: "Tool for building and managing development environment virtual machines"
+
+    - name: "Virtual Box"
+      url: "http://www.virtualbox.org"
+      desc: "Powerful x86 and AMD64/Intel64 virtualization product from Oracle"
+
+- group: Password
+  tools:
+    - name: "KeeWeb"
+      url: "https://github.com/keeweb/keeweb"
+      desc: "Free cross-platform password manager compatible with KeePass"
+
+- group: Console
+  tools:
+    - name: "glances"
+      url: "https://github.com/nicolargo/glances"
+      desc: "Cross-platform curses-based system monitoring tool"
+
+    - name: "htop"
+      url: "https://hisham.hm/htop/"
+      desc: "An interactive process viewer for Unix systems with improved features and user experience"
+
+    - name: "gtop"
+      url: "https://github.com/aksakalli/gtop"
+      desc: "Graphical system monitoring dashboard for terminal"
+
+    - name: "lnav"
+      url: "http://lnav.org"
+      desc: "Colored log files navigator"
+
+    - name: "tldr"
+      url: "https://github.com/tldr-pages/tldr"
+      desc: "Simplified and community-driven man pages"
+
+    - name: "tmux"
+      url: "https://github.com/tmux/tmux/wiki"
+      desc: "Terminal multiplexer that enable running several programs in one terminal"
+
+    - name: "exa"
+      url: "https://the.exa.website/"
+      desc: "Modern replacement for ls"

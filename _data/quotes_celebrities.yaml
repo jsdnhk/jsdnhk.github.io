@@ -1,5 +1,5 @@
 ---
-# celebrities displayed which will be shown with bio. in seq.
+# celebrities to show
 - name: Albert Einstein
   name_short: einstein
   place_birth: DEU

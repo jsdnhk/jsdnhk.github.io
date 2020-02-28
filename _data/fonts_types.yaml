@@ -1,0 +1,17 @@
+---
+# Fonts types with description
+- name: Family
+  name_short: family
+  desc: "for all-purposes"
+
+- name: Sans
+  name_short: sans
+  desc: "for screen display"
+
+- name: Monospace
+  name_short: monospace
+  desc: "for text editors"
+
+- name: Serif
+  name_short: serif
+  desc: "for paper print"

@@ -1,5 +1,5 @@
 ---
-# Customized Jekyll deployment workflow (in test phase)
+# Custom Jekyll Builds on GitHub Pages (test phase)
 name: "Deployment"
 on:
   push:
@@ -20,3 +20,13 @@ jobs:
           current_time=$(TZ=Asia/Hong_Kong date)
           echo "Local Datetime: ${current_time}"
           echo "Checked out the code."
+# build-and-deploy:
+#    runs-on: ubuntu-latest
+#    needs: pre-deploy
+#    steps:
+#      - name: Build & Deploy to GitHub Pages
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+#          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+#        uses: BryanSchuetz/jekyll-deploy-gh-pages@master

@@ -1,0 +1,16 @@
+---
+- name: "Times New Roman"
+  url: "https://en.wikipedia.org/wiki/Times_New_Roman"
+  desc: "Most popular printing typeface provides the best view guarantee"
+
+- name: "Apple New York"
+  url: "https://developer.apple.com/fonts/"
+  desc: "New generation of printing typeface with modern, elegant style released in June 2019"
+
+- name: "Baskerville"
+  url: "https://en.wikipedia.org/wiki/Baskerville"
+  desc: "An ancient printing typeface with crisp edges, high contrast and rich proportions"
+
+- name: "Linux Libertine"
+  url: "https://en.wikipedia.org/wiki/Linux_Libertine"
+  desc: "Intended as a free replacement for the Times font family, more rounded and explicit letters"

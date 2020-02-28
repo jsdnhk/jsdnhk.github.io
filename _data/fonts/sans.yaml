@@ -1,0 +1,12 @@
+---
+- name: "Redhat Font"
+  url: "https://www.redhat.com/en/about/brand/standards/typography"
+  desc: "Designed with Red Hat personality - open, straightforward, rational, but friendly and approachable"
+
+- name: "Apple SF Pro"
+  url: "https://developer.apple.com/fonts/"
+  desc: "Consistent, but clear and elegant, used as system font for iOS, macOS"
+
+- name: "Microsoft Sans Serif"
+  url: "https://en.wikipedia.org/wiki/Microsoft_Sans_Serif"
+  desc: "Very legible and classical Microsoft Windows UI font since Windows 2000"

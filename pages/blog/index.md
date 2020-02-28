@@ -10,8 +10,7 @@ permalink: /blog/
 ## Latest Blog Posts
 
 {% for post in site.posts %}
-{% assign isDisplayTestPosts = jekyll.environment == 'development' %}
-{% if post.display or isDisplayTestPosts %}
+{% if post.display or jekyll.environment == 'development' %}
   * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
 {% endif %}
 {% endfor %}

@@ -1,0 +1,16 @@
+---
+- name: "Google Noto Fonts"
+  url: "https://www.google.com/get/noto/"
+  desc: "Harmonious look and feel, supported for all languages"
+
+- name: "Google Roboto Fonts"
+  url: "https://fonts.google.com/specimen/Roboto"
+  desc: "Modern, yet approachable and emotional, used as the system font for Android"
+
+- name: "Microsoft Segoe Fonts"
+  url: "https://en.wikipedia.org/wiki/Segoe"
+  desc: "Friendly and legible set, widely used in Microsoft products and materials"
+
+- name: "PT Fonts"
+  url: "https://en.wikipedia.org/wiki/PT_Fonts"
+  desc: "Russian government used, displayed well at small font sizes by taller letters"

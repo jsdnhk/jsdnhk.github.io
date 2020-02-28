@@ -5,21 +5,39 @@ on:
     branches:
       - master
 jobs:
-  lighthouse:
+  lighthouse-stdout:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: "Audit URLs using Lighthouse"
-        uses: treosh/lighthouse-ci-action@v2
+      - name: "mainpage performance"
+        uses: jakejarvis/lighthouse-action@master
         with:
-          urls: |
-            https://jsdn.hk
-            https://jsdn.hk/resume
-            https://jsdn.hk/blog
-            https://jsdn.hk/quotes
-            https://jsdn.hk/links
-      - name: "Save audited results as artifact"
-        uses: actions/upload-artifact@v1
+          url: 'https://jsdn.hk'
+      - name: "resume performance"
+        uses: jakejarvis/lighthouse-action@master
         with:
-          name: jsdn.hk.audit_result
-          path: '.lighthouseci'   # store as .json files
+          url: 'https://jsdn.hk/resume'
+      - name: "blog performance"
+        uses: jakejarvis/lighthouse-action@master
+        with:
+          url: 'https://jsdn.hk/blog'
+      - name: "quotes performance"
+        uses: jakejarvis/lighthouse-action@master
+        with:
+          url: 'https://jsdn.hk/quotes'
+      - name: "links performance"
+        uses: jakejarvis/lighthouse-action@master
+        with:
+          url: 'https://jsdn.hk/links'
+      - name: "toolset performance"
+        uses: jakejarvis/lighthouse-action@master
+        with:
+          url: 'https://jsdn.hk/toolset'
+      - name: "fonts performance"
+        uses: jakejarvis/lighthouse-action@master
+        with:
+          url: 'https://jsdn.hk/fonts'
+      - name: "Upload results as an artifact"
+        uses: actions/upload-artifact@master
+        with:
+          name: lighthouse-report
+          path: './report'

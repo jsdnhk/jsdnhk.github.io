@@ -1,0 +1,25 @@
+---
+name: "Auditing"
+on:
+  push:
+    branches:
+      - master
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: "Audit URLs using Lighthouse"
+        uses: treosh/lighthouse-ci-action@v2
+        with:
+          urls: |
+            https://jsdn.hk
+            https://jsdn.hk/resume
+            https://jsdn.hk/blog
+            https://jsdn.hk/quotes
+            https://jsdn.hk/links
+      - name: "Save audited results as artifact"
+        uses: actions/upload-artifact@v1
+        with:
+          name: jsdn.hk.audit_result
+          path: '.lighthouseci'   # store as .json files

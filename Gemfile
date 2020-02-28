@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
 # use current GitHub page dependencies
-gem 'github-pages', group: :jekyll_plugins
+
+group :jekyll_plugins do
+  gem 'github-pages'
+end
 
 group :development, :test do
   gem 'html-proofer'
@@ -9,4 +12,7 @@ group :development, :test do
   gem 'parallel'
   gem 'rubocop'
   gem 'typhoeus'
+end
+
+group :production do
 end

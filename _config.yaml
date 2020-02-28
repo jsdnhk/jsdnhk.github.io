@@ -26,7 +26,7 @@ disqus_shortname: jsdnhk
 
 # build settings
 collections_dir: collections
-exclude: ["etc", "scripts", "vendor", "Gemfile*", "package.json*", "Rakefile", "node_modules", ".idea"]
+exclude: ["etc", "scripts", "vendor", "Gemfile*", "package.json*", "Rakefile", "node_modules", ".idea", ".github"]
 profile: true
 strict_front_matter: true
 
@@ -39,6 +39,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-relative-links
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-avatar

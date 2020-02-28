@@ -9,7 +9,7 @@ permalink: /debug/
 Display debug message when in localhost development.
 Can be queried by 1) REST API Client(suggested), 2) Web browser
 {% endcomment %}
-{% if site.url contains "localhost" or site.url contains "127.0.0.1" %}
+{% if jekyll.environment == 'development' %}
 {
     "status": "OK",
     "message": "Successful loaded.",

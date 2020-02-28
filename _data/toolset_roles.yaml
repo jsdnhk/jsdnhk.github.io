@@ -1,0 +1,16 @@
+---
+# toolset roles with description
+- name: Typist
+  name_short: typist
+  emoji: ':computer:'
+  desc: 'types emails, documents, or source codes'
+
+- name: Gardener
+  name_short: gardener
+  emoji: ':house_with_garden:'
+  desc: 'takes care of a site as a regular job'
+
+- name: Clerk
+  name_short: clerk
+  emoji: ':notebook:'
+  desc: 'deals with records or information'

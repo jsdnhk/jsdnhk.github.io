@@ -1,0 +1,92 @@
+---
+- group: Web Browser
+  tools:
+    - name: "Chrome"
+      url: "https://www.google.com/chrome/browser/desktop/index.html"
+      desc: "Published by Google, stable and fast, containing rich plugins support"
+
+    - name: "Firefox"
+      url: "https://www.mozilla.org/en-US/firefox/new"
+      desc: "Lightweight that's excellent at security issue, highly-customized by many plugins and themes"
+
+    - name: "Opera"
+      url: "https://www.opera.com/"
+      desc: "Clean and fast web browser, allowed accessing the internet via free VPN connection"
+
+- group: Office Suite
+  tools:
+    - name: "Google Docs"
+      url: "https://www.google.com/docs/about/"
+      desc: "Free, user-friendly but completed cloud office suite"
+
+    - name: "Libre Office"
+      url: "https://www.libreoffice.org/"
+      desc: "Open-source, cross-platform and fully-featured office suite, as default software in Linux"
+
+    - name: "Microsoft Office"
+      url: "https://www.office.com/"
+      desc: "Most powerful and mature productivity suites, widely use in commercial"
+
+- group: Markdown
+  tools:
+    - name: "Typora"
+      url: "https://typora.io/"
+      desc: "A minimal but stable markdown editor, with suitable shortcuts and various themes"
+
+- group: Mind-Mapping
+  tools:
+    - name: "XMind"
+      url: "http://www.xmind.net"
+      desc: "Clear, easy-to-use but high ability organization tool"
+
+- group: Email
+  tools:
+    - name: "Thunderbird"
+      url: "https://www.thunderbird.net/en-US/"
+      desc: "Experienced and reliable email agent software"
+
+- group: Image Editor
+  tools:
+    - name: "Adobe Photoshop"
+      url: "https://www.adobe.com/products/photoshop.html"
+      desc: "As a standard software of the designers over the world"
+
+    - name: "GIMP"
+      url: "https://www.gimp.org/downloads/"
+      desc: "Free but powerful image editor, with Photoshop like concepts and features"
+
+- group: File Transfer
+  tools:
+    - name: "XunLei"
+      url: "http://www.xunlei.com/"
+      desc: "Fast and completed downloader, with various media information"
+
+    - name: "Filezilla"
+      url: "https://filezilla-project.org"
+      desc: "Stable, straight-forward and user-friendly server file management tool"
+
+    - name: "Transmission"
+      url: "https://www.transmissionbt.com"
+      desc: "Simple, lightweight, multi-platform torrent downloader"
+
+- group: Console
+  tools:
+    - name: "youtube-dl"
+      url: "https://rg3.github.io/youtube-dl/"
+      desc: "Easiest way to download youtube clips to local"
+
+    - name: "you-get"
+      url: "https://you-get.org"
+      desc: "Useful web scarper in various popular sites"
+
+    - name: "zdict"
+      url: "https://github.com/zdict/zdict"
+      desc: "Convenient tool binding to online dictionaries API, support English and Chinese word search"
+
+    - name: "opencc"
+      url: "https://github.com/BYVoid/OpenCC"
+      desc: "Reliable tool of conversion between Traditional Chinese and Simplified Chinese"
+
+    - name: "httrack"
+      url: "http://www.httrack.com"
+      desc: "Useful tool for downloading a whole website and offline browsing"

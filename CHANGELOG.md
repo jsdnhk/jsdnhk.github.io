@@ -14,7 +14,7 @@ title: "Changelog"
 - Integrated the portfolio page into the site
 - Updated documents and materials
 
-### v19.06 (2020/01/11)
+### v20.01 (2020/01/11)
 
 - Changed the portfolio display style
 - Changed domain to jsdn.hk

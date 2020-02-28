@@ -10,7 +10,7 @@ json_files = Dir["#{saints_folder_path}/*.json"]
 
 class String
   def formatted
-    !(self.end_with?('.') || self.end_with?('?') || self.end_with?('!')) ? self.strip + "." : self.strip
+    !(self.end_with?('.') || self.end_with?('?') || self.end_with?('!')) ? (self.strip + ".") : self.strip
   end
 end
 
@@ -25,7 +25,8 @@ begin
       if data_quotes.any? { |quote| quote.formatted.eql?(result["quoteText"].formatted) }
         true
       else
-        data_quotes.append(result["quoteText"].strip)
+        result["quoteText"] = result["quoteText"].formatted
+        data_quotes.append(result["quoteText"])
         false
       end
     end

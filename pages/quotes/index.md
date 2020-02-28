@@ -9,7 +9,7 @@ permalink: /quotes/
 {% for celebrity in site.data.quotes_celebrities %}
 
 
-## ![](/assets/images/flags_country/{{ celebrity.place_birth | downcase | strip }}.svg){{ celebrity.name }} ({{ celebrity.date_birth | date: "%d %b, %Y" }} – {{ celebrity.date_gone | date: "%Y" }})
+## ![{{ celebrity.place_birth }}](/assets/images/flags_country/{{ celebrity.place_birth | downcase | strip }}.svg){{ celebrity.name }} ({{ celebrity.date_birth | date: "%d %b, %Y" }} – {{ celebrity.date_gone | date: "%Y" }})
 ### {{ celebrity.titles | join: ', ' }}
 
 {% for groups_hash in site.data.quotes %}

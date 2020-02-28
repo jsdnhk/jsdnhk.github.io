@@ -113,8 +113,8 @@ task :syncheck do
   system 'bundle exec rubocop -D -S'
 end
 
-desc "Test the webpage in local"
-task :test do
+desc "Test the HTML pages elements in local"
+task :webtest do
   system 'bundle exec jekyll build'
   HTMLProofer.check_directory(DIRS['site'], check_html: true).run
 end
@@ -125,18 +125,18 @@ task :preview do
 end
 
 desc "Reload the site info"
-task :reload do
+task :update do
   system "./get-pages-latest-date.rb", chdir: DIRS['scripts']
 end
 
 desc "Push the current code to the master branch"
-task :cmpush => :reload do
+task :cmpush => :update do
   abort("rake aborted!") unless ask("Sure to commit all the change to remote?", %w(y n)) == 'y'
   system "./git-commit-push.sh", chdir: DIRS['scripts']
 end
 
 desc "Push the current code to the master branch"
-task :verpush => :reload do
+task :verpush => :update do
   abort("rake aborted!") unless ask("Sure to push the new version to remote?", %w(y n)) == 'y'
   system "./git-version-push.sh", chdir: DIRS['scripts']
 end

@@ -37,9 +37,13 @@ pages.each do |page|
   when 'links'
     Dir["#{data_folder_path}/links.yaml"]
   when 'quotes'
-    Dir["#{data_folder_path}/quotes/*"]
+    Dir["#{data_folder_path}/quotes_celebrities.yaml"] + Dir["#{data_folder_path}/quotes/*"]
   when 'resume'
     Dir["#{pages_folder_path}/resume/*"]
+  when 'toolset'
+    Dir["#{data_folder_path}/toolset_roles.yaml"] + Dir["#{data_folder_path}/toolset/*"]
+  when 'fonts'
+    Dir["#{data_folder_path}/fonts_types.yaml"] + Dir["#{data_folder_path}/fonts/*"]
   else
     raise("have page which is not yet handled.[#{page}]")
   end

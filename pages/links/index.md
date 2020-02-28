@@ -9,7 +9,7 @@ permalink: /links/
 {% for link in site.data.links %}
 
 
-## ![]({{ site.path_header_image.h2 }}{{ link.icon | downcase | strip }}){{ link.type }}
+## ![image]({{ site.path_header_image.h2 }}{{ link.icon | downcase | strip }}){{ link.type }}
 
 {% for suggestion in link.suggestions %}
 
