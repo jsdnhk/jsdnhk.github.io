@@ -1,15 +1,15 @@
 ---
 - name: blog
-  mtime: '20200229'
+  mtime: '20200225'
 - name: debug
-  mtime: '20200229'
+  mtime: '20200226'
 - name: fonts
-  mtime: '20200229'
+  mtime: '20200227'
 - name: links
-  mtime: '20200229'
+  mtime: '20200225'
 - name: quotes
-  mtime: '20200229'
+  mtime: '20200226'
 - name: resume
-  mtime: '20200229'
+  mtime: '20200202'
 - name: toolset
-  mtime: '20200229'
+  mtime: '20200228'
