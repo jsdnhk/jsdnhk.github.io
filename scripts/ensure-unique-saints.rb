@@ -10,7 +10,8 @@ json_files = Dir["#{saints_folder_path}/*.json"]
 
 class String
   def formatted
-    !(self.end_with?('.') || self.end_with?('?') || self.end_with?('!')) ? (self.strip + ".") : self.strip
+    self.strip!
+    !self.match?(/[[:punct:]]/) ? (self + ".") : self
   end
 end
 

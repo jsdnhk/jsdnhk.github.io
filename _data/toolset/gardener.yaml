@@ -55,11 +55,11 @@
 
     - name: "RubyGems"
       url: "https://rubygems.org/"
-      desc: "Used to interact with 3rd-party Python packages"
+      desc: "A tool designed to easily manage of gems, which are standardized Ruby programs and libraries"
 
     - name: "pip"
       url: "https://pip.pypa.io/"
-      desc: "A tool designed to easily manage of gems, mean standardized Ruby programs and libraries"
+      desc: "Used to interact with 3rd-party Python packages"
 
 - group: Remote Control
   tools:
@@ -98,6 +98,10 @@
 
 - group: Console
   tools:
+    - name: "rake"
+      url: "https://ruby.github.io/rake"
+      desc: "Lightweight but powerful automation tool programmed by Ruby"
+
     - name: "glances"
       url: "https://github.com/nicolargo/glances"
       desc: "Cross-platform curses-based system monitoring tool"

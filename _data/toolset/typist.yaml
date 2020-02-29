@@ -17,11 +17,11 @@
 
     - name: "Vim"
       url: "https://www.vim.org/download.php"
-      desc: "Improved version of Unix default editor 'Vi', most common and fit editor to use in the terminal"
+      desc: "Improved version of Unix default editor 'Vi', most common and fittest editor to use in the terminal"
 
     - name: "Atom"
       url: "https://atom.io/"
-      desc: "Published by GitHub, a cross-platform editor providing clean project collaboration and organization tools"
+      desc: "Published by GitHub, a cross-platform editor providing good project collaboration and organization tools"
 
 - group: Terminal
   tools:

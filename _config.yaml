@@ -73,7 +73,7 @@ defaults:
       layout: page_md
   # posts
   - scope:
-      path: "collections/_posts/"
+      path: "collections/_posts"
       type: "posts"
     values:
       layout: post

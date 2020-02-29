@@ -12,6 +12,6 @@ Just an IT man portfolio
 * [Emoji CSS][gh-emoji]
 * [Web Counter][hitwebcounter]
 
-[ogl-resume]: <https://onepagelove.com/minimal-resume>
-[gh-emoji]: <https://afeld.github.io/emoji-css/>
-[hitwebcounter]: <http://www.hitwebcounter.com>
+[ogl-resume]: https://onepagelove.com/minimal-resume
+[gh-emoji]: https://afeld.github.io/emoji-css/
+[hitwebcounter]: http://www.hitwebcounter.com
