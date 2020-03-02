@@ -26,7 +26,18 @@ disqus_shortname: jsdnhk
 
 # build settings
 collections_dir: collections
-exclude: ["etc", "scripts", "vendor", "Gemfile*", "package.json*", "Rakefile", "node_modules", ".idea", ".github"]
+exclude:
+  - "etc"
+  - "scripts"
+  - "vendor"
+  - "Gemfile*"
+  - "package.json*"
+  - "Rakefile"
+  - "node_modules"
+  - ".idea"
+  - ".github"
+  - "**/*/node_modules"
+  - "**/*/package.json*"
 profile: true
 strict_front_matter: true
 

@@ -1,5 +1,5 @@
 const bg_color_body_values = ['white', 'gray', 'black'];
-const bg_color_body_default_idx = bg_color_body_values.indexOf('white');
+const bg_color_body_default_idx = bg_color_body_values.indexOf('gray');
 
 $(document).ready(function() {
     showBGColorBody(getBGColorBody());

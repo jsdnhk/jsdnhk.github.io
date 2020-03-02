@@ -1,115 +1,109 @@
 # cowsay
 
-````
- __________________
-< srsly dude, why? >
- ------------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-````
+[![Build Status](https://travis-ci.com/johnnysprinkles/cowsay.svg?branch=master)](https://travis-ci.com/johnnysprinkles/cowsay)
+[![npm version](https://badge.fury.io/js/cowsay2.svg)](https://badge.fury.io/js/cowsay2)
 
-cowsay is a configurable talking cow, originally written in Perl by [Tony Monroe](https://github.com/tnalpgge/rank-amateur-cowsay)
+Modernized version of cowsay
 
-This project is a translation in JavaScript of the original program and an attempt to bring the same silliness to node.js.
+This borrows from https://github.com/piuccio/cowsay.
+The cow files are the same content but instead of Perl heredoc text files
+they're ES6 template literals.
 
-## Install
+* No reading files at runtime. Cows are declared as static compile-time dependencies.
+* Works the same whether client-side or server-side, and whether running from
+  raw source for from a transpiled bundle.
+* Leveraging modern language features like destructuring and arrow functions.
+* Update to more modern Javascript style with two-space indents, single quoted
+  strings, and `const` and `let` instead of `var`, as you might see on the Google
+  or airbnb JS style guides.
 
-    npm install -g cowsay
+### Usage
 
-## Usage
+See test/example.js for examples, but the basic usage is:
 
-    cowsay JavaScript FTW!
+    cowsay.say('What you want to say');
 
-or
+Or pass some options:
 
-    cowthink node.js is cool
+    cowsay.say('Did you hear someting?', { mode: 'paranoid' });
+    cowsay.say('A quick brown fox jumped over the lazy dog', { W: 15 });
+    cowsay.think('I\'m looking sideways', { e: 'cc' });
 
-It acts in the same way as the original cowsay, so consult `cowsay(1)` or run `cowsay -h`
+Get a demo of all available cows with `node test/cows.js`, and get a demo of all
+available modes with `node test/modes.js`. Get a general test demonstrating line wrapping
+and whitespace handling at `node test/example.js`.
 
-````
- ________
-< indeed >
- --------
-    \
-     \
-                                   .::!!!!!!!:.
-  .!!!!!:.                        .:!!!!!!!!!!!!
-  ~~~~!!!!!!.                 .:!!!!!!!!!UWWW$$$
-      :$$NWX!!:           .:!!!!!!XUWW$$$$$$$$$P
-      $$$$$##WX!:      .<!!!!UW$$$$"  $$$$$$$$#
-      $$$$$  $$$UX   :!!UW$$$$$$$$$   4$$$$$*
-      ^$$$B  $$$$\     $$$$$$$$$$$$   d$$R"
-        "*$bd$$$$      '*$$$$$$$$$$$o+#"
-             """"          """""""
-````
+### Importing cows
 
-## Usage as a module
+The above examples use the default cow file. You can import other cows and pass them in
+on the `cow` option. Do that one of two ways.
 
-cowsay can be used as any other npm dependency
+Import all cows, like:
 
-    var cowsay = require("cowsay");
+    let cows = require('cowsay2/cows');
+    cowsay('Gobble gobble', { cow: cows.turkey });
 
-    console.log(cowsay.say({
-    	text : "I'm a moooodule",
-    	e : "oO",
-    	T : "U "
-    }));
+Or just import the cow you need (better for client-side bundles):
 
-    // or cowsay.think()
+    let cow = require('cowsay2/turkey');
+    cowsay('Gobble gobble', { cow });
 
-````
- _________________
-( I'm a moooodule )
- -----------------
-        o   ^__^
-         o  (oO)\_______
-            (__)\       )\/\
-             U  ||----w |
-                ||     ||
-````
+### Text options
 
-## Pipe from standard input
+* `n` or `nowrap`: Don't do any line wrapping beyond whatever newlines occur in the provided text
+* `W`: Number of columns to wrap at (defaults to 40)
 
-    echo please repeat | cowsay
+### Examples
 
-## Usage in the browser
+See some live example on RunKit at
+https://runkit.com/johnnysprinkles/5e28a5470e860e001a25123f
 
-cowsay works in your browser too with rollup / webpack / browserify / you name it.
+    console.log(cowsay('hi'));
+     ____
+    < hi >
+     ----
+            \   ^__^
+             \  (oo)\_______
+                (__)\       )\/\
+                    ||----w |
+                    ||     ||
 
-```js
-import { say } from 'cowsay';
 
-console.log(say({ text: 'grazing in the browser' }));
-```
+    console.log(cowsay.say("The static String.raw() method is a tag function of template literals. This is similar to the r prefix in Python, or the @ prefix in C# for string literals. (But it is not identical; see explanations in this issue.) It's used to get the raw string form of template strings, that is, substitutions (e.g. \${foo}) are processed, but escapes (e.g. \n) are not."));
+     __________________________________________
+    / The static String.raw() method is a tag  \
+    | function of template literals. This is   |
+    | similar to the r prefix in Python, or    |
+    | the @ prefix in C# for string literals.  |
+    | (But it is not identical; see            |
+    | explanations in this issue.) It's used   |
+    | to get the raw string form of template   |
+    | strings, that is, substitutions (e.g.    |
+    | ${foo}) are processed, but escapes (e.g. |
+    \ ) are not.                               /
+     ------------------------------------------
+            \   ^__^
+             \  (oo)\_______
+                (__)\       )\/\
+                    ||----w |
+                    ||     ||
 
-You can customize the cow by importing the relevant one
 
-```js
-import { think, SQUIRREL } from 'cowsay';
+    const whale = require('./cows/whale');
+    console.log(cowsay.say('Moo', { cow: whale }));
+     _____
+    < Moo >
+     -----
+       \
+        \
+         \
+                    '-.
+          .---._     \ .--'
+        /       `-..__)  ,-'
+       |    0           /
+        --.__,   .__.,`
+         `-.___'._\_.'
 
-console.log(think({
-  text: 'grazing in the browser',
-  cow: SQUIRREL,
-  eyes: 'pp',
-  tongue: ';;',
-}));
-```
+### Related packages
 
-All cows are included in the bundle, but you can use rollup / webpack tree-shake feature to reduce the final bundle size.
-
-### Browser options
-
-```js
-say({
-  text: 'hello',
-  cow: '', // Template for a cow, get inspiration from `./cows`
-  eyes: 'oo', // Select the appearance of the cow's eyes, equivalent to cowsay -e
-  tongue: 'L|', // The tongue is configurable similarly to the eyes through -T and tongue_string, equivalent to cowsay -T
-  wrap: false, // If it is specified, the given message will not be word-wrapped. equivalent to cowsay -n
-  wrapLength: 40, // Specifies roughly where the message should be wrapped. equivalent to cowsay -W
-  mode: 'b', // One of 	"b", "d", "g", "p", "s", "t", "w", "y"
-});
-```
+https://github.com/piuccio/cowsay

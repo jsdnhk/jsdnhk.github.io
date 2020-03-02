@@ -3,6 +3,15 @@ title: "Changelog"
 ---
 ## Latest Update
 
+### v20.03 (2020/03/03)
+
+- Updated background video player's videos, buttons
+- Created toolset & fonts pages
+- Integrated GitHub workflow in the build process
+- Integrated automation task scripts
+- Displayed latest update date of pages
+- Enhanced sidebar features and animation
+
 ### v20.02 (2020/02/02)
 
 - Updated project structure

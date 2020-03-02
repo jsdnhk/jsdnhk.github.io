@@ -1,31 +1,31 @@
-var baloon = require("./lib/balloon");
-var cows = require("./lib/cows");
-var faces = require("./lib/faces");
+const balloon = require('./lib/balloon');
+const defaultCow = require('./cows/default');
+const { getFace } = require('./lib/faces');
 
-exports.say = function (options) {
-	return doIt(options, true);
-};
+const DEFAULT_COLUMNS = 40;
 
-exports.think = function (options) {
-	return doIt(options, false);
-};
+function doIt(text, options = {}, action) {
+  let nowrap = options.n || options.nowrap;
+  let wrapWidth = nowrap ? undefined : (options.W || DEFAULT_COLUMNS);
+  let filledBalloon = balloon[action](text, wrapWidth);
 
-exports.list = cows.list;
+  let cow = options.cow || defaultCow;
+  let { eyes, tongue } = getFace(options);
 
-function doIt (options, sayAloud) {
-	var cowFile;
+  let filledCow = cow({
+    thoughts: action == 'say' ? '\\' : 'o',
+    eyes,
+    tongue,
+    eye: eyes[0],
+  });
 
-	if (options.r) {
-		var cowsList = cows.listSync();
-		cowFile = cowsList[Math.floor(Math.random() * cowsList.length)];
-	} else {
-		cowFile = options.f || "default";
-	}
-
-	var cow = cows.get(cowFile);
-	var face = faces(options);
-	face.thoughts = sayAloud ? "\\" : "o";
-
-	var action = sayAloud ? "say" : "think";
-	return baloon[action](options.text || options._.join(" "), options.n ? null : options.W) + "\n" + cow(face);
+  return filledBalloon + filledCow;
 }
+
+exports.say = function(text, options) {
+  return doIt(text, options, 'say');
+};
+
+exports.think = function(text, options) {
+  return doIt(text, options, 'think');
+};

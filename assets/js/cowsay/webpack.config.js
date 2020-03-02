@@ -5,7 +5,9 @@ module.exports = {
         filename: 'cowsay.bundle.js',
         path: path.resolve(__dirname, './'),
     },
-    node: {
-        fs: "empty"
+    "resolve": {
+        "alias": {
+            ".cows": "cowsay/cows"
+        }
     }
 };
