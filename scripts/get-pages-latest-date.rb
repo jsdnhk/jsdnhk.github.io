@@ -48,7 +48,7 @@ pages.each do |page|
     raise("have page which is not yet handled.[#{page}]")
   end
   mtime_page = getLatestTimeFiles(arr_page_files)
-  latest_date = {'name' => page, 'mtime' => (mtime_page ? mtime_page.strftime("%Y%m%d") : nil)}
+  latest_date = {'name' => page, 'mtime' => (mtime_page ? mtime_page.strftime("%-d-%-m-%Y") : nil)}
   latest_dates.append(latest_date)
 end
 File.write(output_yaml, latest_dates.to_yaml)

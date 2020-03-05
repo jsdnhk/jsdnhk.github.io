@@ -29,10 +29,12 @@ collections_dir: collections
 exclude:
   - "etc"
   - "scripts"
+  - "logs"
   - "vendor"
   - "Gemfile*"
   - "package.json*"
   - "Rakefile"
+  - "rakelib"
   - "node_modules"
   - ".idea"
   - ".github"

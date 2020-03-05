@@ -11,6 +11,6 @@ permalink: /blog/
 
 {% for post in site.posts %}
 {% if post.display or jekyll.environment == 'development' %}
-  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
+  * {{ post.date | date: "%Y%m%d" }} &raquo; [ {{ post.title }} ]({{ post.url }})
 {% endif %}
 {% endfor %}
