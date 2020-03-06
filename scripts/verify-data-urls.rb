@@ -7,6 +7,7 @@ require 'yaml'
 require 'uri'
 require "net/http"
 
+IS_FORMAT_URLS = true
 DATA_FOLDER_PATH = File.expand_path('../_data', File.dirname(__FILE__))
 SOURCE_FOLDER_PATH = File.expand_path('../', File.dirname(__FILE__))
 CHECKLIST = {
@@ -15,6 +16,23 @@ CHECKLIST = {
   toolset: [Dir["#{DATA_FOLDER_PATH}/toolset/*.yaml"]].flatten
 }
 FILES_ALL = CHECKLIST.values.flatten
+
+class String
+  def fUrl!
+    return self unless self && IS_FORMAT_URLS
+    self.strip!
+    self.gsub!(/(?=\/?)www\./,'')
+    self.gsub!(/\/+$/, '')
+    self
+  end
+end
+
+class Array
+  def mapfUrl!
+    return self unless self && IS_FORMAT_URLS
+    self.map! { |url| url.fUrl!; url }
+  end
+end
 
 class UrlsChecker
   attr_reader :filename, :urls, :urls_valid, :urls_invalid
@@ -63,28 +81,6 @@ class UrlsChecker
    end
 end
 
-class UrlsFormatter
-  attr_reader :filename, :urls_formatted
-
-  def initialize(filename)
-    @filename = filename    # fullpath preferred
-    @urls_formatted= {}
-    formatUrlsInFile(@filename)
-  end
-
-  private
-  def formatUrlsInFile(file)
-
-  end
-
-  def self.formattedUrl(input_url)
-    return_url = input_url.strip.gsub(/(?=\/?)www\./,'').gsub(/\/+$/, '')
-    uri_url = URI(return_url)
-    return_url = "https://#{return_url}" if !uri_url.scheme
-    return_url
-  end
-end
-
 class Main
   def initialize()
     @filenames = FILES_ALL
@@ -128,14 +124,14 @@ class Main
     urls_file = []
     if CHECKLIST[:links].include?(file)
       obj_file = YAML.load_file(file)
-      obj_file.each { |ary_item| urls_file.concat(ary_item['suggestions']) if ary_item.include?('suggestions') }
+      obj_file.each { |ary_item| urls_file.concat(ary_item['suggestions'].mapfUrl!) if ary_item.include?('suggestions') }
     elsif CHECKLIST[:fonts].include?(file)
       obj_file = YAML.load_file(file)
-      obj_file.each { |ary_item| urls_file.push(ary_item['url']) if ary_item.include?('url') }
+      obj_file.each { |ary_item| urls_file.push(ary_item['url'].fUrl!) if ary_item.include?('url') }
     elsif CHECKLIST[:toolset].include?(file)
       obj_file = YAML.load_file(file)
       obj_file.each do |ary_item|
-        urls_file.concat(ary_item['tools'].map { |ary_item_inner| ary_item_inner['url'] if ary_item_inner.include?('url') }) if ary_item.include?('tools')
+        urls_file.concat(ary_item['tools'].map { |ary_item_inner| ary_item_inner['url'].fUrl! if ary_item_inner.include?('url') }) if ary_item.include?('tools')
       end
     end
     @objs[file] = obj_file

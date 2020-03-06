@@ -31,7 +31,7 @@
 
     - name: "SuperPuTTY"
       url: "https://github.com/jimradford/superputty"
-      desc: "Window manager for the PuTTY SSH Clients providing all connections in one, with connection management"
+      desc: "Window manager for the PuTTY SSH Clients providing all connections in one platform"
 
 - group: Database
   tools:
@@ -49,13 +49,13 @@
       url: "https://ipython.readthedocs.io/en/stable/"
       desc: "Interactive Python shell providing a rich toolkit to use Python the most"
 
+    - name: "pry"
+      url: "https://github.com/pry/pry/wiki"
+      desc: "Enhance interactive Ruby shell with helpful features such as src/doc browsing and use of commands"
+
     - name: "Jupyter Notebook"
       url: "https://jupyter.org/"
       desc: "An open-source web application that allows management of live codes as documents"
-
-    - name: "IRB"
-      url: "https://ruby-doc.org/stdlib-2.7.0/libdoc/irb/rdoc/IRB.html"
-      desc: "Stands for 'interactive Ruby', a tool to execute Ruby expressions interactively"
 
 - group: Console
   tools:
