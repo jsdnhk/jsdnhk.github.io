@@ -1,5 +1,5 @@
 ---
-# Custom Jekyll Builds on GitHub Pages (test phase)
+# Custom Jekyll deployment on GitHub Pages (test phase)
 name: "Deployment"
 on:
   push:

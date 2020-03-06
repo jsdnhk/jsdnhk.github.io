@@ -8,7 +8,7 @@
 title: "jsdn.hk"
 email: "dn@jsdn.hk"
 description: "Simple Note"
-keywords: "about-me, personal-blog, quotes, contacts, geek, main-page, useful-links, hker"
+keywords: "about-me, personal-blog, useful-links, quotes, fonts, toolset, resume, geek, hker"
 tagline: "Simple Note"
 url: "https://jsdn.hk"
 language: en
@@ -27,17 +27,16 @@ disqus_shortname: jsdnhk
 # build settings
 collections_dir: collections
 exclude:
+  - ".git*"
+  - ".idea"
   - "etc"
-  - "scripts"
   - "logs"
-  - "vendor"
+  - "rakelib"
+  - "scripts"
+  - "Rakefile"
   - "Gemfile*"
   - "package.json*"
-  - "Rakefile"
-  - "rakelib"
   - "node_modules"
-  - ".idea"
-  - ".github"
   - "**/*/node_modules"
   - "**/*/package.json*"
 profile: true

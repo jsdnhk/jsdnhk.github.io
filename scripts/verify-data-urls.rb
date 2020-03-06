@@ -3,10 +3,13 @@
 
 # Verify the url links validity for the selected yaml files, even widely replacing
 
+
 require 'yaml'
 require 'uri'
 require "net/http"
+require 'optparse'
 
+EXEC_FILENAME = "verify-data-urls.rb"
 DATA_FOLDER_PATH = File.expand_path('../_data', File.dirname(__FILE__))
 SOURCE_FOLDER_PATH = File.expand_path('../', File.dirname(__FILE__))
 CHECKLIST = {
@@ -16,7 +19,7 @@ CHECKLIST = {
 }
 FILES_ALL = CHECKLIST.values.flatten
 
-$is_format_urls = false
+$is_format_urls = false   # default option[:format] value
 
 class String
   def fUrl!
@@ -92,7 +95,7 @@ class Main
   public
   def start()
     verifyFiles()
-    displayFiles()
+    displayResult()
   end
 
   def verifyFiles()
@@ -123,12 +126,13 @@ class Main
     @checkers[file] = UrlsChecker.new(file, urls_file)
   end
 
-  def displayFiles
+  def displayResult
     @filenames.each do |file|
       obj = @objs[file]
       checker = @checkers[file]
+      puts "---"
       puts "#{file}:"
-      # puts "- urls_valid:"; pp checker.urls_valid
+      # puts "-  urls_valid:"; pp checker.urls_valid
       puts "- urls_invalid:"; pp checker.urls_invalid
     end
   end
@@ -136,8 +140,16 @@ end
 
 if __FILE__ == $0
   is_success = true
+  options = {}
+  OptionParser.new do |opts|
+    opts.banner = "Usage: #{EXEC_FILENAME} [options]"
+    opts.on("-f", "--[no-]format", "Format urls to readfiles") do |f|
+      options[:format] = f
+    end
+  end.parse!
   begin
-    $stdout.puts('Starting verify-data-urls:')
+    $is_format_urls = options[:format] || $is_format_urls
+    $stdout.puts("Starting #{EXEC_FILENAME}...")
     main = Main.new()
     main.start()
   rescue Exception => ex

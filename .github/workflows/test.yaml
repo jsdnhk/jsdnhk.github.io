@@ -1,0 +1,27 @@
+---
+# Test set on GitHub Pages on remote server
+name: "Testing"
+on:
+  push:
+    branches:
+      - master
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    env:
+      JEKYLL_ENV=production
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.5
+      - name: Install prequisites
+        run: |
+          gem install bundler
+          bundle install --jobs 4 --retry 3
+      - name: Test the HTML pages elements in build files(html)
+        run: >
+          bundle exec rake test:html
+      - name: Test urls validity in data files(url)
+        run: >
+          bundle exec rake test:url
