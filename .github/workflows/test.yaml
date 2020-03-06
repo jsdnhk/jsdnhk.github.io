@@ -9,7 +9,7 @@ jobs:
   web:
     runs-on: ubuntu-latest
     env:
-      JEKYLL_ENV=production
+      JEKYLL_ENV: production
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-ruby@v1
