@@ -1,20 +1,21 @@
 ---
-- name: "Courier"
-  url: "https://en.wikipedia.org/wiki/Courier_(typeface)"
-  desc: "Initially created for IBM typewriters with device-flavored, suitable in dimmer background"
-
-- name: "Courier New"
-  url: "https://en.wikipedia.org/wiki/Courier_(typeface)#Courier_New"
-  desc: "Thinner-look version from Courier for more legible on screens, suitable in lighter background"
-
-- name: "D2Coding"
-  url: "https://github.com/naver/d2codingfont"
-  desc: "Published by NAVER(South Korea) for developers, provided high readability in Asian characters as well"
-
-- name: "Input Mono"
-  url: "https://djr.com/input/"
-  desc: "Human-friendly font with easily-distinguishable characters, large punctuation, and rich letter-spacing"
-
-- name: "JetBrains Mono"
-  url: "https://jetbrains.com/mono/"
-  desc: "Special attention to every detail for programming use, which resulted to a smooth-viewing font"
+- name: Courier
+  url: https://en.wikipedia.org/wiki/Courier_(typeface)
+  desc: Initially created for IBM typewriters with device-flavored, suitable in dimmer
+    background
+- name: Courier New
+  url: https://en.wikipedia.org/wiki/Courier_(typeface)#Courier_New
+  desc: Thinner-look version from Courier for more legible on screens, suitable in
+    lighter background
+- name: D2Coding
+  url: https://github.com/naver/d2codingfont
+  desc: Published by NAVER(South Korea) for developers, provided high readability
+    in Asian characters as well
+- name: Input Mono
+  url: https://djr.com/input
+  desc: Human-friendly font with easily-distinguishable characters, large punctuation,
+    and rich letter-spacing
+- name: JetBrains Mono
+  url: https://jetbrains.com/mono
+  desc: Special attention to every detail for programming use, which resulted to a
+    smooth-viewing font

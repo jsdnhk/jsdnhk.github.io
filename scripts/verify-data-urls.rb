@@ -1,13 +1,12 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# Check out and log whether all the http links validity for the selected files
+# Verify the url links validity for the selected yaml files, even widely replacing
 
 require 'yaml'
 require 'uri'
 require "net/http"
 
-IS_FORMAT_URLS = true
 DATA_FOLDER_PATH = File.expand_path('../_data', File.dirname(__FILE__))
 SOURCE_FOLDER_PATH = File.expand_path('../', File.dirname(__FILE__))
 CHECKLIST = {
@@ -17,9 +16,11 @@ CHECKLIST = {
 }
 FILES_ALL = CHECKLIST.values.flatten
 
+$is_format_urls = false
+
 class String
   def fUrl!
-    return self unless self && IS_FORMAT_URLS
+    return self unless self && $is_format_urls
     self.strip!
     self.gsub!(/(?=\/?)www\./,'')
     self.gsub!(/\/+$/, '')
@@ -29,7 +30,7 @@ end
 
 class Array
   def mapfUrl!
-    return self unless self && IS_FORMAT_URLS
+    return self unless self && $is_format_urls
     self.map! { |url| url.fUrl!; url }
   end
 end
@@ -90,50 +91,34 @@ class Main
 
   public
   def start()
-    # formatFiles()
-    checkFiles()
+    verifyFiles()
     displayFiles()
   end
 
-  private
-  def formatFiles()
-    threads = []
-    @filenames.each do |filename|
-      threads << Thread.new do
-        formatFile(filename)
-      end
-    end
-    threads.each { |thr| thr.join }
-  end
-
-  def formatFile(filename)
-  end
-
-  def checkFiles()
+  def verifyFiles()
     threads = []
     @filenames.each do |file|
       threads << Thread.new do
-          checkFile(file)
+        verifyFile(file)
       end
     end
     threads.each { |thr| thr.join }
   end
 
-  def checkFile(file)
-    obj_file = nil
+  def verifyFile(file)
+    obj_file = nil, obj_file_orig = nil
     urls_file = []
+    obj_file = YAML.load_file(file); obj_file_orig = YAML.load_file(file)
     if CHECKLIST[:links].include?(file)
-      obj_file = YAML.load_file(file)
       obj_file.each { |ary_item| urls_file.concat(ary_item['suggestions'].mapfUrl!) if ary_item.include?('suggestions') }
     elsif CHECKLIST[:fonts].include?(file)
-      obj_file = YAML.load_file(file)
       obj_file.each { |ary_item| urls_file.push(ary_item['url'].fUrl!) if ary_item.include?('url') }
     elsif CHECKLIST[:toolset].include?(file)
-      obj_file = YAML.load_file(file)
       obj_file.each do |ary_item|
         urls_file.concat(ary_item['tools'].map { |ary_item_inner| ary_item_inner['url'].fUrl! if ary_item_inner.include?('url') }) if ary_item.include?('tools')
       end
     end
+    File.write(file, obj_file.to_yaml) if $is_format_urls && obj_file != obj_file_orig
     @objs[file] = obj_file
     @checkers[file] = UrlsChecker.new(file, urls_file)
   end
