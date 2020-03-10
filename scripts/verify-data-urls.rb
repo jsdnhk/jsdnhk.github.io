@@ -9,7 +9,7 @@ require 'uri'
 require "net/http"
 require 'optparse'
 
-EXEC_FILENAME = "verify-data-urls.rb"
+EXEC_FILENAME = $0
 DATA_FOLDER_PATH = File.expand_path('../_data', File.dirname(__FILE__))
 SOURCE_FOLDER_PATH = File.expand_path('../', File.dirname(__FILE__))
 CHECKLIST = {
