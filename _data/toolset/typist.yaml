@@ -40,6 +40,9 @@
   - name: DBeaver
     url: https://dbeaver.io
     desc: An universal database client supporting multiple platforms and databases
+  - name: Robo 3T
+    url: https://robomongo.org
+    desc: A cross-platform MongoDB management tool which is cored with mongo shell
 - group: Playground
   tools:
   - name: IPython
