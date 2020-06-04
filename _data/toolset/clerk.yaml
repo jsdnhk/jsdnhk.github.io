@@ -8,10 +8,16 @@
     url: https://mozilla.org/en-US/firefox/new
     desc: Lightweight that's excellent at security issue, highly-customized by many
       plugins and themes
+  - name: Firefox Developer Edition
+    url: https://mozilla.org/en-US/firefox/developer
+    desc: Tailor-made browser with hackable development tools
   - name: Opera
     url: https://opera.com
     desc: Clean and fast web browser, allowed accessing the internet via free VPN
       connection
+  - name: Tor
+    url: https://torproject.org
+    desc: Achieved real anonymous browsing via relaying distributed network all over the world
 - group: Office Suite
   tools:
   - name: Google Docs
@@ -48,6 +54,9 @@
   - name: GIMP
     url: https://gimp.org/downloads
     desc: Free but powerful image editor, with Photoshop like concepts and features
+  - name: XnView
+    url: https://xnview.com/en
+    desc: Image viewer that easily open and edit the photo files
 - group: File Transfer
   tools:
   - name: XunLei

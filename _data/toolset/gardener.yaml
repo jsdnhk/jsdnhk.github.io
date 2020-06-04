@@ -14,6 +14,9 @@
   - name: WireShark
     url: https://wireshark.org
     desc: Well-known free network protocol analyzer
+  - name: OpenDNS
+    url: https://www.opendns.com
+    desc: Fast domain name service with phishing protection and content filtering
   - name: ClamAV
     url: https://www.clamav.net
     desc: Open-source antivirus engine, widely used in server
@@ -22,6 +25,9 @@
   - name: Cockpit
     url: https://cockpit-project.org
     desc: Web accessible interactive admin interface for servers
+  - name: Uptime Robot
+    url: https://uptimerobot.com
+    desc: Real time web services healthcheck
 - group: Optimization
   tools:
   - name: CCleaner
@@ -82,16 +88,19 @@
   - name: rake
     url: https://ruby.github.io/rake
     desc: Lightweight but powerful automation tool programmed by Ruby
-  - name: glances
-    url: https://github.com/nicolargo/glances
-    desc: Cross-platform curses-based system monitoring tool
   - name: htop
     url: https://hisham.hm/htop
     desc: An interactive process viewer for Unix systems with improved features and
       user experience
+  - name: glances
+    url: https://github.com/nicolargo/glances
+    desc: Cross-platform curses-based system monitoring tool
   - name: gtop
     url: https://github.com/aksakalli/gtop
     desc: Graphical system monitoring dashboard for terminal
+  - name: supervisor
+    url: http://supervisord.org/
+    desc: Refined process control system on UNIX OS, especially fit inside virtual containers
   - name: lnav
     url: http://lnav.org
     desc: Colored log files navigator
