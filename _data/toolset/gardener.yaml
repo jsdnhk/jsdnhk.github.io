@@ -22,6 +22,16 @@
     desc: Open-source antivirus engine, widely used in server
 - group: Monitoring
   tools:
+  - name: htop
+    url: https://hisham.hm/htop
+    desc: An interactive process viewer for Unix systems with improved features and
+      user experience
+  - name: gtop
+    url: https://github.com/aksakalli/gtop
+    desc: Graphical system monitoring dashboard for terminal
+  - name: glances
+    url: https://github.com/nicolargo/glances
+    desc: Cross-platform curses-based system monitoring tool
   - name: Cockpit
     url: https://cockpit-project.org
     desc: Web accessible interactive admin interface for servers
@@ -88,16 +98,6 @@
   - name: rake
     url: https://ruby.github.io/rake
     desc: Lightweight but powerful automation tool programmed by Ruby
-  - name: htop
-    url: https://hisham.hm/htop
-    desc: An interactive process viewer for Unix systems with improved features and
-      user experience
-  - name: glances
-    url: https://github.com/nicolargo/glances
-    desc: Cross-platform curses-based system monitoring tool
-  - name: gtop
-    url: https://github.com/aksakalli/gtop
-    desc: Graphical system monitoring dashboard for terminal
   - name: supervisor
     url: http://supervisord.org/
     desc: Refined process control system on UNIX OS, especially fit inside virtual containers
