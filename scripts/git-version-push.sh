@@ -12,6 +12,7 @@ cd $SCRIPT_PATH
 cd ../
 git status
 commit_msg=""
+git log --oneline -5
 read -p "Enter the commit message: " commit_msg
 if [ -z "${commit_msg}" ]; then
   echo "Please input the commit message" >&2

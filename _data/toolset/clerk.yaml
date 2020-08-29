@@ -57,6 +57,9 @@
   - name: XnView
     url: https://xnview.com/en
     desc: Image viewer that easily open and edit the photo files
+  - name: Greenshot
+    url: https://getgreenshot.org
+    desc: Free and open-source light-weight screenshot software
 - group: File Transfer
   tools:
   - name: XunLei

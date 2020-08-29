@@ -21,15 +21,17 @@
     - https://helpx.adobe.com
     - https://digitalocean.com/community
     - https://katacoda.com
+    - https://realpython.com
 
 - type: "Open Source Projects"
   icon: "categories/applications-development-web.png"
   suggestions:
     - https://opensource.google
     - https://opensource.microsoft.com
-    - https://opensource.com
     - https://redhatofficial.github.io
+    - https://opensource.facebook.com
     - https://apache.org
+    - https://opensource.com
 
 - type: "Search For Answer"
   icon: "categories/system-help.png"
