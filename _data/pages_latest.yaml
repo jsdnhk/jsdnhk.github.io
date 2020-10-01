@@ -1,6 +1,6 @@
 ---
 - name: blog
-  mtime: 29-8-2020
+  mtime: 1-10-2020
 - name: debug
   mtime: 26-2-2020
 - name: fonts
@@ -10,6 +10,6 @@
 - name: quotes
   mtime: 26-2-2020
 - name: resume
-  mtime: 2-2-2020
+  mtime: 30-9-2020
 - name: toolset
   mtime: 9-8-2020

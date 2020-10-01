@@ -8,6 +8,7 @@ _site/
 .jekyll-metadata
 Gemfile.lock
 .rake_tasks~
+.rakeTasks
 logs/
 
 # npm
