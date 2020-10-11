@@ -1,6 +1,7 @@
 ---
 title: "Projects Used"
 ---
+
 ## Special Thanks To...
 
 ### Styling

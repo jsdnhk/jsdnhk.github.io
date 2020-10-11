@@ -1,71 +1,78 @@
 ---
 - group: IDE
   tools:
-  - name: JetBrains Developer Tools
-    url: https://jetbrains.com/products.html
-    desc: Best tools to build applications up by the full-featured development platform
+    - name: JetBrains Developer Tools
+      url: https://jetbrains.com/products.html
+      desc: Best tools to build applications up by the full-featured development platform
 - group: Editors
   tools:
-  - name: Notepad++
-    url: https://notepad-plus-plus.org
-    desc: Lightweight but featured, with clear user-interface source code editor
-  - name: VS Code
-    url: https://code.visualstudio.com
-    desc: Published by Microsoft, stable and very rich ecosystem of plugins, extensions
-      and runtimes
-  - name: Vim
-    url: https://www.vim.org/download.php
-    desc: Improved version of Unix default editor 'Vi', most common and fittest editor
-      to use in the terminal
-  - name: Atom
-    url: https://atom.io
-    desc: Published by GitHub, a cross-platform editor providing good project collaboration
-      and organization tools
+    - name: Notepad++
+      url: https://notepad-plus-plus.org
+      desc: Lightweight but featured, with clear user-interface source code editor
+    - name: VS Code
+      url: https://code.visualstudio.com
+      desc:
+        Published by Microsoft, stable and very rich ecosystem of plugins, extensions
+        and runtimes
+    - name: Vim
+      url: https://www.vim.org/download.php
+      desc:
+        Improved version of Unix default editor 'Vi', most common and fittest editor
+        to use in the terminal
+    - name: Atom
+      url: https://atom.io
+      desc:
+        Published by GitHub, a cross-platform editor providing good project collaboration
+        and organization tools
 - group: Terminal
   tools:
-  - name: iTerm2
-    url: http://iterm2.com
-    desc: Stylish terminal which provided user-defined colorful profiles and various
-      output support
-  - name: SuperPuTTY
-    url: https://github.com/jimradford/superputty
-    desc: Window manager for the PuTTY SSH Clients providing all connections in one
-      platform
+    - name: iTerm2
+      url: http://iterm2.com
+      desc:
+        Stylish terminal which provided user-defined colorful profiles and various
+        output support
+    - name: SuperPuTTY
+      url: https://github.com/jimradford/superputty
+      desc:
+        Window manager for the PuTTY SSH Clients providing all connections in one
+        platform
 - group: Database
   tools:
-  - name: MySQL Workbench
-    url: https://mysql.com/products/workbench
-    desc: An unified visual tool for all DB posts to use and control MySQL with all
-      features in graphical
-  - name: DBeaver
-    url: https://dbeaver.io
-    desc: An universal database client supporting multiple platforms and databases
-  - name: Robo 3T
-    url: https://robomongo.org
-    desc: A cross-platform MongoDB management tool which is cored with mongo shell
+    - name: MySQL Workbench
+      url: https://mysql.com/products/workbench
+      desc:
+        An unified visual tool for all DB posts to use and control MySQL with all
+        features in graphical
+    - name: DBeaver
+      url: https://dbeaver.io
+      desc: An universal database client supporting multiple platforms and databases
+    - name: Robo 3T
+      url: https://robomongo.org
+      desc: A cross-platform MongoDB management tool which is cored with mongo shell
 - group: Playground
   tools:
-  - name: IPython
-    url: https://ipython.readthedocs.io/en/stable
-    desc: Interactive Python shell providing a rich toolkit to use Python the most
-  - name: pry
-    url: https://github.com/pry/pry/wiki
-    desc: Enhance interactive Ruby shell with helpful features such as src/doc browsing
-      and use of commands
-  - name: Jupyter Notebook
-    url: https://jupyter.org
-    desc: An open-source web application that allows management of live codes as documents
+    - name: IPython
+      url: https://ipython.readthedocs.io/en/stable
+      desc: Interactive Python shell providing a rich toolkit to use Python the most
+    - name: pry
+      url: https://github.com/pry/pry/wiki
+      desc:
+        Enhance interactive Ruby shell with helpful features such as src/doc browsing
+        and use of commands
+    - name: Jupyter Notebook
+      url: https://jupyter.org
+      desc: An open-source web application that allows management of live codes as documents
 - group: Console
   tools:
-  - name: howdoi
-    url: https://github.com/gleitz/howdoi
-    desc: A code search tool via the command line
-  - name: cloc
-    url: https://github.com/AlDanial/cloc
-    desc: Code lines counter inside the project directory or file
-  - name: thefuck
-    url: https://github.com/nvbn/thefuck
-    desc: Corrector of the previous wrong-typed console command
-  - name: hyperfine
-    url: https://github.com/sharkdp/hyperfine
-    desc: A command-line benchmarking tool
+    - name: howdoi
+      url: https://github.com/gleitz/howdoi
+      desc: A code search tool via the command line
+    - name: cloc
+      url: https://github.com/AlDanial/cloc
+      desc: Code lines counter inside the project directory or file
+    - name: thefuck
+      url: https://github.com/nvbn/thefuck
+      desc: Corrector of the previous wrong-typed console command
+    - name: hyperfine
+      url: https://github.com/sharkdp/hyperfine
+      desc: A command-line benchmarking tool

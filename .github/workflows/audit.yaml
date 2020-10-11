@@ -11,33 +11,33 @@ jobs:
       - name: "mainpage performance"
         uses: jakejarvis/lighthouse-action@master
         with:
-          url: 'https://jsdn.hk'
+          url: "https://jsdn.hk"
       - name: "resume performance"
         uses: jakejarvis/lighthouse-action@master
         with:
-          url: 'https://jsdn.hk/resume'
+          url: "https://jsdn.hk/resume"
       - name: "blog performance"
         uses: jakejarvis/lighthouse-action@master
         with:
-          url: 'https://jsdn.hk/blog'
+          url: "https://jsdn.hk/blog"
       - name: "quotes performance"
         uses: jakejarvis/lighthouse-action@master
         with:
-          url: 'https://jsdn.hk/quotes'
+          url: "https://jsdn.hk/quotes"
       - name: "links performance"
         uses: jakejarvis/lighthouse-action@master
         with:
-          url: 'https://jsdn.hk/links'
+          url: "https://jsdn.hk/links"
       - name: "toolset performance"
         uses: jakejarvis/lighthouse-action@master
         with:
-          url: 'https://jsdn.hk/toolset'
+          url: "https://jsdn.hk/toolset"
       - name: "fonts performance"
         uses: jakejarvis/lighthouse-action@master
         with:
-          url: 'https://jsdn.hk/fonts'
+          url: "https://jsdn.hk/fonts"
       - name: "Upload results as an artifact"
         uses: actions/upload-artifact@master
         with:
           name: lighthouse-report
-          path: './report'
+          path: "./report"

@@ -5,7 +5,7 @@ layout: default
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">
-    <i class="fa fa-calendar" aria-hidden="true"/>
+    <i class="fa fa-calendar" aria-hidden="true" />
     &nbsp;&nbsp;{{ page.date | date: "%Y%m%d" -}}
   </span>
   {{ content }}
@@ -13,23 +13,20 @@ layout: default
 
 {% if page.comment %}
 <h2>Comments</h2>
-<div id='discourse-comments'></div>
-{% include comment.html %}
-{% endif %}
-
-{% if site.related_posts.size > 0 %}
+<div id="discourse-comments"></div>
+{% include comment.html %} {% endif %} {% if site.related_posts.size > 0 %}
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
     {% for post in site.related_posts limit:5 %}
-      <li>
-        <p>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date: "%Y%m%d" }}</small>
-          </a>
-        </p>
-      </li>
+    <li>
+      <p>
+        <a href="{{ post.url }}">
+          {{ post.title }}
+          <small>{{ post.date | date: "%Y%m%d" }}</small>
+        </a>
+      </p>
+    </li>
     {% endfor %}
   </ul>
 </div>

@@ -1,7 +1,8 @@
 ---
 - name: Redhat Font
   url: https://redhat.com/en/about/brand/standards/typography
-  desc: Designed with Red Hat personality - open, straightforward, rational, but friendly
+  desc:
+    Designed with Red Hat personality - open, straightforward, rational, but friendly
     and approachable
 - name: Apple SF Pro
   url: https://developer.apple.com/fonts

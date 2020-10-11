@@ -1,12 +1,11 @@
 <footer class="page-footer">
-{% if page.footer_quote %}
-    <strong><em>{{- page.footer_quote | replace: '---', "&mdash;" -}}</em></strong>
-{% endif %}
-{% assign page_current = page.url | remove: '/' %}
-{% for page_item in site.data.pages_latest %}
-{% if page_current == page_item.name %}
-<br><br>
-<i class="fa fa-calendar-o" aria-hidden="true"/>&nbsp;&nbsp;{{ page_item.mtime -}}
-{% endif %}
-{% endfor %}
+  {% if page.footer_quote %}
+  <strong
+    ><em>{{- page.footer_quote | replace: '---', "&mdash;" -}}</em></strong
+  >
+  {% endif %} {% assign page_current = page.url | remove: '/' %} {% for
+  page_item in site.data.pages_latest %} {% if page_current == page_item.name %}
+  <br /><br />
+  <i class="fa fa-calendar-o" aria-hidden="true" />&nbsp;&nbsp;{{
+  page_item.mtime -}} {% endif %} {% endfor %}
 </footer>

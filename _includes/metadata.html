@@ -1,17 +1,13 @@
 <!-- Metadata -->
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">-->
-<meta name="viewport" content="width=device-width">
-<meta name="description" content="{{ site.description }}">
-<meta name="keywords"  content="{{ site.keywords }}">
+<meta name="viewport" content="width=device-width" />
+<meta name="description" content="{{ site.description }}" />
+<meta name="keywords" content="{{ site.keywords }}" />
 <meta name="author" content="{{ site.github_username }}@GitHub" />
 {% seo %}
 <!-- Title -->
 <title>
-    {{ site.title | append: ' | ' }}
-    {%if page.title != nil %}
-    {{ page.title }}
-    {%else%}
-    {{ site.tagline }}
-    {%endif%}
+  {{ site.title | append: ' | ' }} {%if page.title != nil %} {{ page.title }}
+  {%else%} {{ site.tagline }} {%endif%}
 </title>

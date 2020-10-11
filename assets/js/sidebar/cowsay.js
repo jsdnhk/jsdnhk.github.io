@@ -1,1 +1,0 @@
-console.error("Error: Cannot find module '.cows/ackbar.cow' from '/Users/DNdevelop/Jekyll/jsdnhk.github.io/node_modules/cowsay/build'");

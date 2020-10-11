@@ -1,65 +1,97 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <!--<script src="/assets/js/cowsay/cowsay.bundle.js"></script>-->
-      <script src="/assets/js/sidebar/logo.js"></script>
-      <script src="/assets/js/sidebar/banner.js"></script>
+      <!--<script type="module" src="/assets/js/cowsay.mjs"></script>-->
+      <script src="/assets/js/logo.js"></script>
+      <script src="/assets/js/banner.js"></script>
       <h1>
         <a href="javascript:showAlertLogo();">
-          <img src="/assets/images/jsdn.hk.logo.f@0.33x_new.jpg" alt="{{ site.title }}" class="hvr-buzz-out"/>
+          <img
+            src="/assets/images/jsdn.hk.logo.f@0.33x_new.jpg"
+            alt="{{ site.title }}"
+            class="hvr-buzz-out"
+          />
         </a>
       </h1>
       <p class="lead description">
-        <a href="javascript:onChangeBGColorBody();">
-          {{ site.description }}
-        </a>
+        <a href="javascript:onChangeBGColorBody();"> {{ site.description }} </a>
       </p>
-      <p class="lead">
-        <div class="select-video-bg">
-          <select id="select-video-bg">
-            <option value="">Select a video to play</option>
-            {% assign videos_bg = site.static_files | where: "video_bg", true %}
-            {% for video in videos_bg %}
-            <option value="{{ video.path }}">{{ video.basename  | replace: '_', ' ' }}</option>
-            {% endfor %}
-          </select>
+      <p class="lead"></p>
+      <div class="select-video-bg">
+        <select id="select-video-bg">
+          <option value="">Select a video to play</option>
+          {% assign videos_bg = site.static_files | where: "video_bg", true %}
+          {% for video in videos_bg %}
+          <option value="{{ video.path }}">
+            {{ video.basename | replace: '_', ' ' }}
+          </option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="grid-video-bg">
+        <div class="grid-item-video-bg">
+          <a href="javascript:reloadVideoBG();" class=""
+            ><i class="fa fa-refresh hvr-icon" aria-hidden="true"
+          /></a>
         </div>
-        <div class="grid-video-bg">
-          <div class="grid-item-video-bg"><a href="javascript:reloadVideoBG();" class=""><i class="fa fa-refresh hvr-icon" aria-hidden="true"/></a></div>
-          <div class="grid-item-video-bg"><a href="javascript:changePlaySeq();" class=""><i class="fa fa-list-ul hvr-icon" aria-hidden="true"/></a></div>
-          <div class="grid-item-video-bg"><a href="javascript:toogleSoundVideoBG();" class=""><i class="fa fa-volume-up hvr-icon" aria-hidden="true"/></a></div>
-          <div class="grid-item-video-bg"><a href="javascript:toogleOpacity();" class=""><i class="fa fa-adjust hvr-icon" aria-hidden="true"/></a></div>
-          <div class="grid-item-video-bg"><a href="javascript:shiftVideo(-1);" class=""><i class="fa fa-backward hvr-icon" aria-hidden="true"/></a></div>
-          <div class="grid-item-video-bg"><a href="javascript:shiftVideo(1);" class=""><i class="fa fa-forward hvr-icon" aria-hidden="true"/></a></div>
+        <div class="grid-item-video-bg">
+          <a href="javascript:changePlaySeq();" class=""
+            ><i class="fa fa-list-ul hvr-icon" aria-hidden="true"
+          /></a>
         </div>
-      <p>
+        <div class="grid-item-video-bg">
+          <a href="javascript:toogleSoundVideoBG();" class=""
+            ><i class="fa fa-volume-up hvr-icon" aria-hidden="true"
+          /></a>
+        </div>
+        <div class="grid-item-video-bg">
+          <a href="javascript:toogleOpacity();" class=""
+            ><i class="fa fa-adjust hvr-icon" aria-hidden="true"
+          /></a>
+        </div>
+        <div class="grid-item-video-bg">
+          <a href="javascript:shiftVideo(-1);" class=""
+            ><i class="fa fa-backward hvr-icon" aria-hidden="true"
+          /></a>
+        </div>
+        <div class="grid-item-video-bg">
+          <a href="javascript:shiftVideo(1);" class=""
+            ><i class="fa fa-forward hvr-icon" aria-hidden="true"
+          /></a>
+        </div>
+      </div>
+      <p></p>
     </div>
 
     <nav class="sidebar-nav">
       <!--<a class="sidebar-nav-item{% if page.url == site.baseurl  %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>-->
-      {% comment %}
-        The code below dynamically generates a sidebar nav of pages with `layout: page` in the front-matter.
-      {% endcomment %}
-
-      {% assign layouts = "page_md;page;resume" | split: ';' %}
-      {% for layout in layouts %}
-        {% for node in site.pages %}
-          {% if node.title and node.title_display and node.layout == layout %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-          {% endif %}
-        {% endfor %}
-      {% endfor %}
+      {% comment %} The code below dynamically generates a sidebar nav of pages
+      with `layout: page` in the front-matter. {% endcomment %} {% assign
+      layouts = "page_md;page;resume" | split: ';' %} {% for layout in layouts
+      %} {% for node in site.pages %} {% if node.title and node.title_display
+      and node.layout == layout %}
+      <a
+        class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}"
+        href="{{ node.url }}"
+        >{{ node.title }}</a
+      >
+      {% endif %} {% endfor %} {% endfor %}
 
       <!-- foreign links -->
-      <a class="sidebar-nav-item hvr-icon-grow" href="https://chp-dashboard.geodata.gov.hk/nia/en.html">
-        <i class="fa fa-medkit hvr-icon" aria-hidden="true"/>
+      <a
+        class="sidebar-nav-item hvr-icon-grow"
+        href="https://chp-dashboard.geodata.gov.hk/nia/en.html"
+      >
+        <i class="fa fa-medkit hvr-icon" aria-hidden="true" />
         COVID-19@HK
       </a>
-      <a class="sidebar-nav-item hvr-icon-grow" href="https://www.arcgis.com/apps/opsdashboard/index.html#/85320e2ea5424dfaaa75ae62e5c06e61">
-        <i class="fa fa-medkit hvr-icon" aria-hidden="true"/>
+      <a
+        class="sidebar-nav-item hvr-icon-grow"
+        href="https://www.arcgis.com/apps/opsdashboard/index.html#/85320e2ea5424dfaaa75ae62e5c06e61"
+      >
+        <i class="fa fa-medkit hvr-icon" aria-hidden="true" />
         COVID-19@GB
       </a>
-
 
       <!--
       <a class="sidebar-nav-item" href="{{ site.github_url }}/{{ site.github_username }}">
@@ -67,28 +99,27 @@
         {{ site.github_username | prepend: '@' }}
       </a>
       -->
-      <a class="sidebar-nav-item hvr-icon-grow" href="mailto:{{ site.email }}?Subject=A message from jsdn.hk friends (Direct Message)">
-        <i class="fa fa-paper-plane hvr-icon" aria-hidden="true"/>
+      <a
+        class="sidebar-nav-item hvr-icon-grow"
+        href="mailto:{{ site.email }}?Subject=A message from jsdn.hk friends (Direct Message)"
+      >
+        <i class="fa fa-paper-plane hvr-icon" aria-hidden="true" />
         {{ site.email }}
       </a>
       <a class="sidebar-nav-item hvr-icon-grow" href="/feed.xml">
-        <i class="fa fa-rss-square hvr-icon" aria-hidden="true"/>
+        <i class="fa fa-rss-square hvr-icon" aria-hidden="true" />
         {{ site.title }}
       </a>
     </nav>
 
     <nav class="sidebar-nav secondary-nav">
-      {% comment %}
-      The code below dynamically generates a navigator of `layout: page` in the front-matter.
-      For better viewing, it is not recommended to use.
-      {% endcomment %}
-
-      {% if page.sitenav %}
-        <p class="lead">Table of Contents</p>
-        {% for item in page.sitenav %}
-        <a class="sidebar-nav-item" href="#{{ item.anchor }}">{{ item.title }}</a>
-        {% endfor %}
-      {% endif %}
+      {% comment %} The code below dynamically generates a navigator of `layout:
+      page` in the front-matter. For better viewing, it is not recommended to
+      use. {% endcomment %} {% if page.sitenav %}
+      <p class="lead">Table of Contents</p>
+      {% for item in page.sitenav %}
+      <a class="sidebar-nav-item" href="#{{ item.anchor }}">{{ item.title }}</a>
+      {% endfor %} {% endif %}
     </nav>
   </div>
 </div>

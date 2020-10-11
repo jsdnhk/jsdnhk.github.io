@@ -8,10 +8,9 @@ The project is [open source][proj-repo] under the [MIT license][mit-license] wit
 especially thanks to these [projects][projects-used] to built up this blog.<br>
 Feel free to comment and suggest via [email][email-link] or [issue page][issue-page], thanks and enjoy!<br>
 
-
-[proj-repo]: <https://github.com/jsdnhk/jsdnhk.github.io>
-[mit-license]: <https://github.com/jsdnhk/jsdnhk.github.io/blob/master/LICENSE>
-[email-link]: <mailto:dn@jsdn.hk>
-[issue-page]: <https://github.com/jsdnhk/jsdnhk.github.io/issues>
-[change-log]: <./CHANGELOG.md>
-[projects-used]: <./PROJECTS_USED.md>
+[proj-repo]: https://github.com/jsdnhk/jsdnhk.github.io
+[mit-license]: https://github.com/jsdnhk/jsdnhk.github.io/blob/master/LICENSE
+[email-link]: mailto:dn@jsdn.hk
+[issue-page]: https://github.com/jsdnhk/jsdnhk.github.io/issues
+[change-log]: ./CHANGELOG.md
+[projects-used]: ./PROJECTS_USED.md

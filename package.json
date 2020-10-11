@@ -2,7 +2,8 @@
   "name": "jsdnhk.github.io",
   "title": "Simple Note",
   "author": "DN <dn@jsdn.hk>",
-  "version": "2020.03",
+  "version": "2020.3",
+  "description": "jsdnhk blog at github",
   "homepage": "https://github.com/jsdnhk/jsdnhk.github.io#readme",
   "repository": {
     "type": "git",
@@ -13,24 +14,11 @@
     "url": "https://github.com/jsdnhk/jsdnhk.github.io/issues"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.6",
-    "@babel/preset-env": "^7.8.6",
-    "@babel/preset-react": "^7.8.3",
-    "aliasify": "^2.1.0",
-    "babelify": "^10.0.0",
-    "browserify": "^16.5.0",
     "cowsay": "^1.4.0",
     "es2016": "0.0.0",
-    "grunt": "~0.4.5",
-    "grunt-banner": "~0.2.3",
-    "grunt-contrib-less": "~0.11.4",
-    "grunt-contrib-uglify": "~0.5.1",
-    "grunt-contrib-watch": "~0.6.1",
-    "webpack": "^4.41.6"
+    "prettier": "^2.1.2",
+    "webpack": "^4.44.2"
   },
-  "scripts": {
-    "start": "jekyll serve -w -l --host 0.0.0.0 --port 4000",
-    "dev": "grunt watch & npm run start",
-    "push": "git push origin master --tag"
-  }
+  "scripts": {},
+  "dependencies": {}
 }

@@ -145,6 +145,11 @@ task :reset do
   system 'sudo bundle install'
 end
 
+desc "Lint the files format"
+task :lint do
+  system "./lint-src.sh", chdir: DIRS['scripts']
+end
+
 desc "Launch preview environment"
 task :preview do
   system "bundle exec jekyll serve -w -l --port 4000"

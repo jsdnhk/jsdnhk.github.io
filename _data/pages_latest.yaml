@@ -1,15 +1,15 @@
 ---
 - name: blog
-  mtime: 1-10-2020
+  mtime: 11-10-2020
 - name: debug
-  mtime: 26-2-2020
+  mtime: 11-10-2020
 - name: fonts
-  mtime: 7-3-2020
+  mtime: 11-10-2020
 - name: links
-  mtime: 9-8-2020
+  mtime: 11-10-2020
 - name: quotes
-  mtime: 26-2-2020
+  mtime: 11-10-2020
 - name: resume
-  mtime: 30-9-2020
+  mtime: 11-10-2020
 - name: toolset
-  mtime: 9-8-2020
+  mtime: 11-10-2020

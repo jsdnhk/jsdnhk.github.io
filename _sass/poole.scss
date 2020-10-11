@@ -1,4 +1,4 @@
- /*
+/*
    *                        ___
    *                       /\_ \
    *  _____     ___     ___\//\ \      __
@@ -13,7 +13,7 @@
    * https://github.com/poole/poole.
    */
 
-  /*
+/*
    * Contents
    *
    * Body resets
@@ -27,7 +27,7 @@
    * Themes
    */
 
-  /*
+/*
    * Body resets
    *
    * Update the foundational and global aspects of the page.
@@ -42,7 +42,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -82,7 +83,8 @@ a {
     color: inherit;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $badge;
     text-decoration: underline;
   }
@@ -92,7 +94,12 @@ a {
 
 /* Headings */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 1rem 0;
   font-weight: bold;
   line-height: 1.25;
@@ -104,9 +111,10 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2rem;
 
-  img {   // for use of title icon
+  img {
+    // for use of title icon
     float: left;
-    margin: 0px 20px 0px 0px;   //top right bottom left
+    margin: 0px 20px 0px 0px; //top right bottom left
     vertical-align: middle;
   }
 }
@@ -130,7 +138,9 @@ h3 {
   font-size: 1.25rem;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font-size: 1rem;
 }
 
@@ -147,7 +157,9 @@ strong {
 
 /* Lists */
 
-ul, ol, dl {
+ul,
+ol,
+dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -157,7 +169,7 @@ dt {
 }
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Misc */
@@ -184,12 +196,13 @@ abbr {
 
 /* Code */
 
-code, pre {
+code,
+pre {
   font-family: $fonts_text;
 }
 
 code {
-  padding: .25em .5em;
+  padding: 0.25em 0.5em;
   font-size: 100%;
   color: $selection;
   background-color: $selected_text;
@@ -201,7 +214,7 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   padding: 1rem;
-  font-size: .7rem;
+  font-size: 0.7rem;
   line-height: 1.4;
   white-space: pre;
   white-space: pre-wrap;
@@ -245,7 +258,7 @@ pre {
   }
 
   .gist-file .gist-data {
-    font-size: .8rem !important;
+    font-size: 0.8rem !important;
     line-height: 1.4;
   }
 
@@ -260,10 +273,10 @@ pre {
 /* Quotes */
 
 blockquote {
-  padding: .5rem 1rem;
-  margin: .8rem 0;
+  padding: 0.5rem 1rem;
+  margin: 0.8rem 0;
   color: $cursor_text;
-  border-left: .25rem solid $cursor_guide;
+  border-left: 0.25rem solid $cursor_guide;
 
   p:last-child {
     margin-bottom: 0;
@@ -293,8 +306,9 @@ table {
   border-collapse: collapse;
 }
 
-td, th {
-  padding: .25rem .5rem;
+td,
+th {
+  padding: 0.25rem 0.5rem;
   border: 2px solid $selection;
   color: $selection;
   background-color: $selected_text;
@@ -376,7 +390,8 @@ td, th {
  * page is wrapped in `.page` and is only used on the page layout.
  */
 
-.page, .post {
+.page,
+.post {
   margin-bottom: 4em;
 }
 
@@ -394,7 +409,8 @@ td, th {
   }
 }
 
-.page-title, .post-title {
+.page-title,
+.post-title {
   margin-top: 0;
 }
 
@@ -406,7 +422,7 @@ td, th {
 
 .post-date {
   display: block;
-  margin-top: -.5rem;
+  margin-top: -0.5rem;
   margin-bottom: 1rem;
   color: $links;
 }
