@@ -64,6 +64,9 @@
       desc: An open-source web application that allows management of live codes as documents
 - group: Console
   tools:
+    - name: make
+      url: https://gnu.org/software/make
+      desc: Classic build and tasks automation tool
     - name: howdoi
       url: https://github.com/gleitz/howdoi
       desc: A code search tool via the command line
