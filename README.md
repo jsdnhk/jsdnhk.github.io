@@ -1,4 +1,4 @@
-## jsdn.hk profile - Stand with HK 2020
+## jsdn.hk profile - New Start in 2024
 
 Welcome to the website of an IT man from Hong Kong.<br>
 The shared technical blog contains my personal opinions, with HKer style.<br>
